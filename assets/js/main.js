@@ -11,6 +11,19 @@
     });
   }
 
+  // News ticker: keep a constant reading speed whatever the text length
+  var ticker = document.querySelector("[data-ticker]");
+  if (ticker) {
+    var group = ticker.querySelector(".ticker-group");
+    var setSpeed = function () {
+      var w = group ? group.offsetWidth : 0;
+      if (w > 0) ticker.style.setProperty("--ticker-duration", Math.round(w / 55) + "s");
+    };
+    setSpeed();
+    window.addEventListener("load", setSpeed);
+    window.addEventListener("resize", setSpeed);
+  }
+
   // Publication filters (only runs on the Publications page)
   var root = document.querySelector("[data-pub-filters]");
   if (!root) return;

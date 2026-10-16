@@ -10,6 +10,8 @@ body_class: home
 {% assign n_core = site.data.people.leadership | size | plus: site.data.people.members.size %}
 {% assign countries = site.data.collaborators | map: "country" | uniq %}
 
+{% include news-ticker.html %}
+
 <section class="hero">
   <div class="container hero-grid">
     <div>
