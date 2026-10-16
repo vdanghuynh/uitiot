@@ -2,56 +2,52 @@
   <title id="graph-title">The four research areas of the group</title>
   <desc id="graph-desc">Four research areas connected to one another and to a shared core of optimization and learning. Each area links to its section on the Research page.</desc>
 
-  <defs>
-    <!-- Line icons, 24 x 24 grid. Drawn in white on a colored badge. -->
-    <symbol id="ic-dt" viewBox="0 0 24 24">
-      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 8.5 15 12v7l-6 3.5L3 19v-7z"/>
-        <path d="M3 12l6 3.5L15 12M9 15.5v7"/>
-        <path d="M16.5 4.2a5.2 5.2 0 0 1 4.3 4.3"/>
-        <path d="M16.5 7.4a2.3 2.3 0 0 1 1.1 1.1"/>
-      </g>
-    </symbol>
-    <symbol id="ic-edge" viewBox="0 0 24 24">
-      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M7.5 12.5a3.5 3.5 0 0 1-.3-7A5 5 0 0 1 16.8 5.6a3.5 3.5 0 0 1 .7 6.9z"/>
-        <path d="M12 12.5V16M5.5 20v-1.5a1 1 0 0 1 1-1H17.5a1 1 0 0 1 1 1V20M12 16v2.5"/>
-        <circle cx="5.5" cy="21" r="0.9" fill="currentColor"/>
-        <circle cx="12" cy="21" r="0.9" fill="currentColor"/>
-        <circle cx="18.5" cy="21" r="0.9" fill="currentColor"/>
-      </g>
-    </symbol>
-    <symbol id="ic-wireless" viewBox="0 0 24 24">
-      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="1.9" fill="currentColor"/>
-        <path d="M8.6 8.6a4.8 4.8 0 0 0 0 6.8M15.4 8.6a4.8 4.8 0 0 1 0 6.8"/>
-        <path d="M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/>
-      </g>
-    </symbol>
-    <symbol id="ic-qsec" viewBox="0 0 24 24">
-      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 2.8 19.5 5.6v5.9c0 4.6-3.1 8.2-7.5 9.7-4.4-1.5-7.5-5.1-7.5-9.7V5.6z"/>
-        <ellipse cx="12" cy="11.5" rx="4.6" ry="1.7" transform="rotate(35 12 11.5)" stroke-width="1.4"/>
-        <ellipse cx="12" cy="11.5" rx="4.6" ry="1.7" transform="rotate(-35 12 11.5)" stroke-width="1.4"/>
-        <circle cx="12" cy="11.5" r="1" fill="currentColor" stroke="none"/>
-      </g>
-    </symbol>
-  </defs>
-
   <g class="graph-links" aria-hidden="true">
-    <line x1="120" y1="80" x2="440" y2="80"/>
-    <line x1="120" y1="370" x2="440" y2="370"/>
-    <line x1="120" y1="80" x2="120" y2="370"/>
-    <line x1="440" y1="80" x2="440" y2="370"/>
-    <line x1="120" y1="80" x2="280" y2="225"/>
-    <line x1="440" y1="80" x2="280" y2="225"/>
-    <line x1="120" y1="370" x2="280" y2="225"/>
-    <line x1="440" y1="370" x2="280" y2="225"/>
+    <line class="l-dt l-edge" x1="120" y1="80" x2="440" y2="80"/>
+    <line class="l-wireless l-qsec" x1="120" y1="370" x2="440" y2="370"/>
+    <line class="l-dt l-wireless" x1="120" y1="80" x2="120" y2="370"/>
+    <line class="l-edge l-qsec" x1="440" y1="80" x2="440" y2="370"/>
+    <line class="l-dt" x1="120" y1="80" x2="280" y2="225"/>
+    <line class="l-edge" x1="440" y1="80" x2="280" y2="225"/>
+    <line class="l-wireless" x1="120" y1="370" x2="280" y2="225"/>
+    <line class="l-qsec" x1="440" y1="370" x2="280" y2="225"/>
+  </g>
+
+  <!-- Data packets travelling along the links: from each area into the shared core and back, and between neighbouring areas. Hidden for reduced motion. -->
+  <g class="graph-packets" aria-hidden="true">
+    {%- comment -%} spokes, area to core {%- endcomment -%}
+    <g class="pk pk-dt"><animateMotion path="M120,80 L280,225" dur="3.4s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="1.6s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-edge"><animateMotion path="M440,80 L280,225" dur="3.4s" begin="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="2.2s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-wireless"><animateMotion path="M120,370 L280,225" dur="3.4s" begin="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="2.8s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-qsec"><animateMotion path="M440,370 L280,225" dur="3.4s" begin="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="3.4s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    {%- comment -%} spokes, core back to area {%- endcomment -%}
+    <g class="pk pk-dt"><animateMotion path="M280,225 L120,80" dur="3.4s" begin="3.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="3.3s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-edge"><animateMotion path="M280,225 L440,80" dur="3.4s" begin="3.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="3.9s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-wireless"><animateMotion path="M280,225 L120,370" dur="3.4s" begin="4.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="4.5s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-qsec"><animateMotion path="M280,225 L440,370" dur="3.4s" begin="5.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="3.4s" begin="5.1s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    {%- comment -%} ring between neighbouring areas {%- endcomment -%}
+    <g class="pk pk-dt"><animateMotion path="M120,80 L440,80" dur="5.2s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.92;1" dur="5.2s" begin="2s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-edge"><animateMotion path="M440,80 L440,370" dur="5.2s" begin="3.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.92;1" dur="5.2s" begin="3.3s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-qsec"><animateMotion path="M440,370 L120,370" dur="5.2s" begin="4.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.92;1" dur="5.2s" begin="4.6s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+    <g class="pk pk-wireless"><animateMotion path="M120,370 L120,80" dur="5.2s" begin="5.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.92;1" dur="5.2s" begin="5.9s" repeatCount="indefinite"/><circle r="9"/><circle r="3.8"/></g>
+  </g>
+
+  <!-- Slowly turning orbit around the core, with one marker per area -->
+  <g class="graph-orbit" aria-hidden="true">
+    <circle class="orbit-track" cx="280" cy="225" r="88"/>
+    <g class="orbit-spin">
+      <circle class="od od-dt" cx="280" cy="137" r="5"/>
+      <circle class="od od-edge" cx="368" cy="225" r="5"/>
+      <circle class="od od-qsec" cx="280" cy="313" r="5"/>
+      <circle class="od od-wireless" cx="192" cy="225" r="5"/>
+    </g>
   </g>
 
   <g class="graph-hub">
+    <circle class="hub-pulse" cx="280" cy="225" r="60"/>
+    <circle class="hub-pulse hub-pulse-2" cx="280" cy="225" r="60"/>
     <circle class="hub-ring" cx="280" cy="225" r="68"/>
-    <circle cx="280" cy="225" r="60"/>
+    <circle class="hub-core" cx="280" cy="225" r="60"/>
     <text x="280" y="220" text-anchor="middle">Optimization</text>
     <text x="280" y="242" text-anchor="middle">and learning</text>
   </g>
@@ -68,13 +64,45 @@
   {% assign ty2 = ny | plus: 66 %}
   {% assign ix = tx | minus: 16 %}
   {% assign iy = ny | minus: 16 %}
-  <a class="graph-node node-{{ p.id }}" href="{{ '/research/' | relative_url }}#{{ p.id }}">
-    <title>{{ p.name }}</title>
-    <rect x="{{ nx }}" y="{{ ny }}" width="184" height="80" rx="10"/>
-    <circle class="badge" cx="{{ tx }}" cy="{{ ny }}" r="26"/>
-    <use class="icon" href="#ic-{{ p.id }}" x="{{ ix }}" y="{{ iy }}" width="32" height="32"/>
-    <text x="{{ tx }}" y="{{ ty1 }}" text-anchor="middle">{{ p.line1 }}</text>
-    <text x="{{ tx }}" y="{{ ty2 }}" text-anchor="middle">{{ p.line2 }}</text>
-  </a>
+  <g class="node-enter" style="--i: {{ forloop.index0 }}">
+   <g class="node-float" style="--i: {{ forloop.index0 }}">
+    <a class="graph-node node-{{ p.id }}" data-pillar="{{ p.id }}" href="{{ '/research/' | relative_url }}#{{ p.id }}">
+      <title>{{ p.name }}</title>
+      <rect x="{{ nx }}" y="{{ ny }}" width="184" height="80" rx="10"/>
+      <circle class="badge-ripple" cx="{{ tx }}" cy="{{ ny }}" r="26"/>
+      <g class="node-badge">
+        <circle class="badge" cx="{{ tx }}" cy="{{ ny }}" r="26"/>
+        <svg class="icon icon-{{ p.id }}" x="{{ ix }}" y="{{ iy }}" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          {%- case p.id -%}
+          {%- when "dt" -%}
+          <path d="M9 8.5 15 12v7l-6 3.5L3 19v-7z"/>
+          <path d="M3 12l6 3.5L15 12M9 15.5v7"/>
+          <path class="sig s1" d="M16.5 4.2a5.2 5.2 0 0 1 4.3 4.3"/>
+          <path class="sig s2" d="M16.5 7.4a2.3 2.3 0 0 1 1.1 1.1"/>
+          {%- when "edge" -%}
+          <path d="M7.5 12.5a3.5 3.5 0 0 1-.3-7A5 5 0 0 1 16.8 5.6a3.5 3.5 0 0 1 .7 6.9z"/>
+          <path d="M12 12.5V16M5.5 20v-1.5a1 1 0 0 1 1-1H17.5a1 1 0 0 1 1 1V20M12 16v2.5"/>
+          <circle class="ed e1" cx="5.5" cy="21" r="0.9" fill="currentColor"/>
+          <circle class="ed e2" cx="12" cy="21" r="0.9" fill="currentColor"/>
+          <circle class="ed e3" cx="18.5" cy="21" r="0.9" fill="currentColor"/>
+          {%- when "wireless" -%}
+          <circle class="wc" cx="12" cy="12" r="1.9" fill="currentColor"/>
+          <path class="wv w1" d="M8.6 8.6a4.8 4.8 0 0 0 0 6.8M15.4 8.6a4.8 4.8 0 0 1 0 6.8"/>
+          <path class="wv w2" d="M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/>
+          {%- when "qsec" -%}
+          <path d="M12 2.8 19.5 5.6v5.9c0 4.6-3.1 8.2-7.5 9.7-4.4-1.5-7.5-5.1-7.5-9.7V5.6z"/>
+          <g class="qorbit">
+            <ellipse cx="12" cy="11.5" rx="4.6" ry="1.7" transform="rotate(35 12 11.5)" stroke-width="1.4"/>
+            <ellipse cx="12" cy="11.5" rx="4.6" ry="1.7" transform="rotate(-35 12 11.5)" stroke-width="1.4"/>
+          </g>
+          <circle cx="12" cy="11.5" r="1" fill="currentColor" stroke="none"/>
+          {%- endcase -%}
+        </svg>
+      </g>
+      <text x="{{ tx }}" y="{{ ty1 }}" text-anchor="middle">{{ p.line1 }}</text>
+      <text x="{{ tx }}" y="{{ ty2 }}" text-anchor="middle">{{ p.line2 }}</text>
+    </a>
+   </g>
+  </g>
   {% endfor %}
 </svg>

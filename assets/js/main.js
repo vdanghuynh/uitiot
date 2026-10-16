@@ -24,6 +24,36 @@
     window.addEventListener("resize", setSpeed);
   }
 
+  // Home page graph: light up the links of the hovered or focused area
+  var graph = document.querySelector(".graph");
+  if (graph) {
+    Array.prototype.forEach.call(graph.querySelectorAll(".graph-node"), function (node) {
+      var on = function () { graph.setAttribute("data-hl", node.getAttribute("data-pillar")); };
+      var off = function () { graph.removeAttribute("data-hl"); };
+      node.addEventListener("mouseenter", on);
+      node.addEventListener("mouseleave", off);
+      node.addEventListener("focus", on);
+      node.addEventListener("blur", off);
+    });
+  }
+
+  // Home page: reveal sections as they scroll into view
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (document.body.classList.contains("home") && "IntersectionObserver" in window && !reduce) {
+    var targets = document.querySelectorAll(".section-head, .pillar-row, .news-item, .cta-band .container, .compact-list > li, .pub-list > li, .split > *");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    Array.prototype.forEach.call(targets, function (el, i) {
+      el.classList.add("reveal");
+      var sib = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+      el.style.setProperty("--rd", Math.min(sib, 4) * 0.08 + "s");
+      io.observe(el);
+    });
+  }
+
   // Publication filters (only runs on the Publications page)
   var root = document.querySelector("[data-pub-filters]");
   if (!root) return;
