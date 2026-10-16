@@ -4,10 +4,11 @@
   <h3 class="pub-title">{{ pub.title }}</h3>
   <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.date %}, {{ pub.date }}{% endif %}{% if pub.status %}. {{ pub.status }}{% endif %}</p>
   {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
-  {% if pub.abstract or pub.pdf %}
+  {% if pub.abstract or pub.pdf or pub.doi %}
   <p class="pub-links">
     {% if pub.abstract %}<a href="{{ pub.abstract }}" rel="noopener">Abstract</a>{% endif %}
     {% if pub.pdf %}<a href="{{ pub.pdf }}" rel="noopener">PDF</a>{% endif %}
+    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" rel="noopener">DOI</a>{% endif %}
   </p>
   {% endif %}
   {% if include.show_areas %}

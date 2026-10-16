@@ -2,7 +2,7 @@
 layout: default
 title: Publications
 permalink: /publications/
-description: Journal papers, conference papers, book chapters, and patents from the UiTiOt Research Group and its collaborators.
+description: Patents, books and book chapters, journal papers, and conference papers from the UiTiOt Research Group and its collaborators.
 ---
 {% assign journals = site.data.publications | where: "type", "journal" %}
 {% assign conferences = site.data.publications | where: "type", "conference" %}
@@ -11,7 +11,7 @@ description: Journal papers, conference papers, book chapters, and patents from 
 
 <div class="container page-head">
   <h1>Publications</h1>
-  <p class="lead">Papers from the last five years (2022 to 2026) are listed newest first. For the complete list, citation counts, and a live feed, see <a href="{{ site.data.group.links[1].url }}" rel="noopener">Google Scholar</a> and <a href="{{ site.data.group.links[2].url }}" rel="noopener">DBLP</a>.</p>
+  <p class="lead">Patents, books, journal papers, and conference papers from the last five years (2022 to 2026) are listed newest first. For the complete list, citation counts, and a live feed, see <a href="{{ site.data.group.links[1].url }}" rel="noopener">Google Scholar</a> and <a href="{{ site.data.group.links[2].url }}" rel="noopener">DBLP</a>.</p>
 </div>
 
 <section class="section">
@@ -21,9 +21,10 @@ description: Journal papers, conference papers, book chapters, and patents from 
       <div class="filter-group" role="group" aria-label="Filter by type">
         <span class="filter-label">Type</span>
         <button class="chip" type="button" data-filter="type" data-value="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="type" data-value="patent" aria-pressed="false">Patents</button>
+        <button class="chip" type="button" data-filter="type" data-value="book" aria-pressed="false">Books and chapters</button>
         <button class="chip" type="button" data-filter="type" data-value="journal" aria-pressed="false">Journals</button>
         <button class="chip" type="button" data-filter="type" data-value="conference" aria-pressed="false">Conferences</button>
-        <button class="chip" type="button" data-filter="type" data-value="other" aria-pressed="false">Books and patents</button>
       </div>
       <div class="filter-group" role="group" aria-label="Filter by research area">
         <span class="filter-label">Area</span>
@@ -41,6 +42,20 @@ description: Journal papers, conference papers, book chapters, and patents from 
 
     <p class="empty" id="pub-empty" hidden>No publications match these filters. Clear the search or choose a different area.</p>
 
+    <section class="pub-group" id="patents">
+      <h2>Patents</h2>
+      <ul class="pub-list">
+        {% for pub in patents %}{% include pub-item.html pub=pub show_areas=true %}{% endfor %}
+      </ul>
+    </section>
+
+    <section class="pub-group" id="books">
+      <h2>Books and book chapters</h2>
+      <ul class="pub-list">
+        {% for pub in books %}{% include pub-item.html pub=pub show_areas=true %}{% endfor %}
+      </ul>
+    </section>
+
     <section class="pub-group" id="journals">
       <h2>Journal papers</h2>
       <ul class="pub-list">
@@ -52,20 +67,6 @@ description: Journal papers, conference papers, book chapters, and patents from 
       <h2>Conference papers</h2>
       <ul class="pub-list">
         {% for pub in conferences %}{% include pub-item.html pub=pub show_areas=true %}{% endfor %}
-      </ul>
-    </section>
-
-    <section class="pub-group" id="books">
-      <h2>Books and book chapters</h2>
-      <ul class="pub-list">
-        {% for pub in books %}{% include pub-item.html pub=pub show_areas=true %}{% endfor %}
-      </ul>
-    </section>
-
-    <section class="pub-group" id="patents">
-      <h2>Patents</h2>
-      <ul class="pub-list">
-        {% for pub in patents %}{% include pub-item.html pub=pub show_areas=true %}{% endfor %}
       </ul>
     </section>
 

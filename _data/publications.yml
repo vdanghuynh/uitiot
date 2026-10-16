@@ -2,7 +2,7 @@
 # type: journal | conference | book | patent
 # pillars: any of dt, edge, wireless, qsec (see _data/pillars.yml)
 # featured: true shows the paper on the home page
-# Optional fields: status, note, abstract (URL), pdf (URL)
+# Optional fields: status, note, abstract (URL), pdf (URL), doi (e.g. 10.1109/ATC63255.2024.10908133)
 
 # ---------------------------------------------------------------- Journals
 - type: journal
@@ -358,6 +358,114 @@
   pillars: [wireless, qsec]
 
 - type: conference
+  year: 2026
+  date: Oct. 15-17, 2026
+  status: Accepted
+  authors: H. Le-Vinh, T. Nguyen-Khanh, B. Nguyen-Van, and Q. Le-Trung
+  title: "RSSI-Based Localization for Distributed Passive Wi-Fi Attack Detection"
+  venue: IEEE ATC 2026, Quy Nhon, Vietnam
+  pillars: [wireless, qsec]
+
+- type: conference
+  year: 2026
+  date: Oct. 15-17, 2026
+  status: Accepted
+  authors: T. Pham-Hoang-Anh, V. Pham-Le-Quoc, T. Nguyen-Khanh, L. Van-Thien, and Q. Le-Trung
+  title: "NetPen: Automated Network Penetration Testing Using a Multi-Agent Large Language Models Architecture"
+  venue: IEEE ATC 2026, Quy Nhon, Vietnam
+  pillars: [qsec]
+
+- type: conference
+  year: 2026
+  date: Oct. 15-17, 2026
+  status: Accepted
+  authors: N. Tran-Thu, M. H. T. Huynh, K.-H. Le-Minh, T. D. Ngo, and Q. Le-Trung
+  title: "An Energy-Aware MLOps Pipeline for Adaptive Visual Model Deployment at the Edge"
+  venue: IEEE ATC 2026, Quy Nhon, Vietnam
+  pillars: [edge]
+
+- type: conference
+  year: 2026
+  date: Oct. 15-17, 2026
+  status: Accepted
+  authors: P. Nguyen-Tai, N. Tran-Minh, T. Le-Anh, B. Nguyen-Van, and Q. Le-Trung
+  title: "MLair: A Governance-Centric ML Control Plane for Multi-Tenant AI Workloads"
+  venue: IEEE ATC 2026, Quy Nhon, Vietnam
+  pillars: [edge]
+
+- type: conference
+  year: 2026
+  date: Oct. 15-17, 2026
+  status: Accepted
+  authors: H. N. A. Kiet, N. T. Nhan, C. Dang-Le-Bao, and Q. Le-Trung
+  title: "Resilient Software-Defined Network Routing via Hierarchical Multi-Agent Reinforcement Learning"
+  venue: IEEE ATC 2026, Quy Nhon, Vietnam
+  pillars: [edge, wireless]
+
+- type: conference
+  year: 2026
+  date: Jul. 30-31, 2026
+  status: Accepted
+  authors: M. Bui-Quoc, Q. To-Cong, L. Van-Thien, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "MLOps-Driven Real-Time DDoS Detection With Incremental Learning in Cloud Environments"
+  venue: 8th International Conference on Green Technology and Sustainable Development (GTSD 2026), Ho Chi Minh City, Vietnam
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2026
+  date: Jul. 30-31, 2026
+  status: Accepted
+  authors: H. Vo-Nhat, H. Vo-Nguyen-Thai, L. Van-Thien, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "An Incremental Learning-Based Intrusion Detection System With Hybrid Supervised and Unsupervised Learning"
+  venue: 8th International Conference on Green Technology and Sustainable Development (GTSD 2026), Ho Chi Minh City, Vietnam
+  pillars: [qsec]
+
+- type: conference
+  year: 2026
+  date: Jul. 30-31, 2026
+  status: Accepted
+  authors: T. Nguyen-Khanh, L. Le-Ngoc-Duy, T. Nguyen-Huu, A. Huynh-Phuoc, P. Phan-Trung, L. Van-Thien, and Q. Le-Trung
+  title: "Adaptive Microservices on Kubernetes: Reinforcement Learning-Based Scheduling and LLM-Driven Workflow Orchestration"
+  venue: 8th International Conference on Green Technology and Sustainable Development (GTSD 2026), Ho Chi Minh City, Vietnam
+  pillars: [edge]
+
+- type: conference
+  year: 2026
+  date: Jul. 30-31, 2026
+  status: Accepted
+  authors: C. Luu-Quoc, Q. Bui-Minh, T. Nguyen-Khanh, N. Tran-Hong, and Q. Le-Trung
+  title: "An Adaptive Air Quality Forecasting System Using Internet of Things and Continual Deep Learning"
+  venue: 8th International Conference on Green Technology and Sustainable Development (GTSD 2026), Ho Chi Minh City, Vietnam
+  pillars: [dt, edge]
+
+- type: conference
+  year: 2026
+  date: Jul. 27-29, 2026
+  status: Accepted
+  authors: L. Nguyen-Huu, C. Dang-Le-Bao, and Q. Le-Trung
+  title: "Physics-Informed Neural Network-Augmented Digital Twin for Wind-Aware Multi-UAV Trajectory Planning in Urban Airspace"
+  venue: 2nd International Conference on Intelligent Aerial Access and Applications (IAAA 2026), Ho Chi Minh City, Vietnam
+  pillars: [dt, wireless]
+
+- type: conference
+  year: 2026
+  date: Jul. 13-18, 2026
+  status: Accepted
+  authors: T. Pham-Ngoc, H. Nguyen-Thanh, and Q. Le-Trung
+  title: "QCOEM: Quantum Cloud Orchestration with Evolutionary Multi-Objective Optimization"
+  venue: IEEE CLOUD 2026, Sydney, Australia
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2026
+  date: Jun. 26-28, 2026
+  status: Accepted
+  authors: H. Le-Minh-Khanh, T. Ngo-Duc, and Q. Le-Trung
+  title: "Beyond FLOPs: Are NAS Benchmarks Ready for the Edge?"
+  venue: IEEE ICCCI 2026, Okayama, Japan
+  pillars: [edge]
+
+- type: conference
   year: 2025
   date: Dec. 8-12, 2025
   authors: D. V. Huynh, S. C. Prabhashana, H. Shin, and T. Q. Duong
@@ -418,12 +526,128 @@
   pillars: [qsec]
 
 - type: conference
+  year: 2025
+  date: Dec. 11-13, 2025
+  authors: V. Pham-Le-Quoc, T. Dinh-Cong, T. Pham-Hoang-Anh, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "Performance and Security Evaluation of Federated Learning under IID and Non-IID Settings and Differential Privacy"
+  venue: IEEE COMNETSAT 2025, Padang, Indonesia
+  doi: 10.1109/COMNETSAT68601.2025.11324726
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2025
+  date: Dec. 18-20, 2025
+  authors: S. Do-Phi, T. Bui-Thi-Ngoc, C. Pham-Dinh, B. Nguyen-Van, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "Development of Water Quality Monitoring Systems Based on Internet of Things and Deep Learning"
+  venue: IEEE RIVF 2025, Ho Chi Minh City, Vietnam
+  doi: 10.1109/RIVF68649.2025.11365227
+  pillars: [dt]
+
+- type: conference
+  year: 2025
+  date: Dec. 18-20, 2025
+  authors: P. Nguyen-Duong-Hoang, P. V. Tai, S. N. Pham, C. Dang-Le-Bao, and Q. Le-Trung
+  title: "IsaacLab vs. gym-pybullet-drones: A Comparative Study of UAV Simulators for Reinforcement Learning"
+  venue: IEEE RIVF 2025, Ho Chi Minh City, Vietnam
+  doi: 10.1109/RIVF68649.2025.11365117
+  pillars: [dt, wireless]
+
+- type: conference
+  year: 2025
+  date: Jun. 16-17, 2025
+  authors: T.-B. Pham, M. Nguyen-Le-Ha, L. Van-Thien, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "DDoS Attack Detection for Software-Defined Network Architecture Based on Artificial Intelligence"
+  venue: IEEE ICDV 2025
+  doi: 10.1109/ICDV66179.2025.11135066
+  pillars: [qsec]
+
+- type: conference
   year: 2024
   date: Dec. 8-12, 2024
   authors: D. V. Huynh, S. R. Khosravirad, V. Sharma, B. Canberk, O. A. Dobre, and T. Q. Duong
   title: "Digital Twin-enabled Low-Carbon Sustainable Edge Computing for Wireless Networks"
   venue: IEEE GLOBECOM 2024, Cape Town, South Africa
   pillars: [dt, edge]
+
+- type: conference
+  year: 2024
+  date: 2024
+  authors: D. Pham-Phuc, T. Nguyen-Nhat-Hieu, L. Van-Thien, B. Nguyen-Van, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "Enhancing Detection Capacity and Security for Network-based Intrusion Detection Systems in Internet of Things"
+  venue: IEEE RIVF 2024
+  doi: 10.1109/RIVF64335.2024.11009063
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2024
+  date: 2024
+  authors: B. Nguyen-Van, T. Le-Anh, and Q. Le-Trung
+  title: "Development of an Edge-Computing-Based Intelligent Service Framework for Smart Camera Applications"
+  venue: SoICT 2024, Springer CCIS vol. 2351
+  doi: 10.1007/978-981-96-4285-4_8
+  pillars: [edge]
+
+- type: conference
+  year: 2024
+  date: 2024
+  authors: D. N. Khanh, L. Huynh-Phu, K. Phan-Trung, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "Enhancing Security for Smart Ehealthcare System based on Federated Learning and Homomorphic Encryption"
+  venue: IEEE ACOMPA 2024
+  doi: 10.1109/ACOMPA64883.2024.00026
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2024
+  date: 2024
+  authors: D. Vu-Minh, M. Duong-Tran-Tra, L. Van-Thien, A. Pham-Nguyen-Hai, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "Performance Evaluation of Decentralized Machine Learning based Network-Based Intrusion Detection System for Internet of Things"
+  venue: IEEE ACOMPA 2024
+  doi: 10.1109/ACOMPA64883.2024.00019
+  pillars: [qsec]
+
+- type: conference
+  year: 2024
+  date: 2024
+  authors: P. Phan-Trung and Q. Le-Trung
+  title: "GTPO: A Stabilizing Task Offloading Technique Based on GTrXL and PPO in IoT Edge Computing Environments"
+  venue: IEEE ATC 2024
+  doi: 10.1109/ATC63255.2024.10908133
+  pillars: [edge]
+
+- type: conference
+  year: 2024
+  date: 2024
+  authors: A. Pham-Nguyen-Hai, L. Van-Thien, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "Empowering Anomaly Detection for Industrial Internet of Things with Intelligent Edge Computing and Decentralized Machine Learning"
+  venue: IEEE ATC 2024
+  doi: 10.1109/ATC63255.2024.10908262
+  pillars: [edge, qsec]
+
+- type: conference
+  year: 2024
+  date: Nov. 28-30, 2024
+  authors: L. Van-Thien, D. Vu-Minh, M. Duong-Tran-Tra, A. Pham-Nguyen-Hai, A. Nguyen-Dam-Nhat, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "A Network-Based Intrusion Detection System for Internet of Things on Swarm Learning"
+  venue: IEEE COMNETSAT 2024, Lombok, Indonesia
+  pillars: [qsec]
+
+- type: conference
+  year: 2024
+  date: Feb. 20-21, 2024
+  authors: L. Huynh-Phi, D. Nguyen-Khanh, T. Nguyen-Khanh, C. Dang-Le-Bao, and Q. Le-Trung
+  title: "A Home-based Diabetes Prediction System on Internet of Things, Federated Learning and Edge Computing"
+  venue: INISCOM 2024, Springer
+  doi: 10.1007/978-3-031-67357-3_2
+  pillars: [edge]
+
+- type: conference
+  year: 2024
+  date: Feb. 23-25, 2024
+  authors: T. Nguyen-Khanh, B. Nguyen-Van, P. Phan-Trung, L. Van-Thien, C. Dang-Le-Bao, and Q. Le-Trung
+  title: "UiTiOt - a Smart Weather Station using Libelium Technology and Deep Learning"
+  venue: ACM ICIIT 2024
+  doi: 10.1145/3654522.3654579
+  pillars: [dt]
 
 - type: conference
   year: 2023
@@ -449,6 +673,24 @@
   title: "Adaptive Service Placement, Task Offloading and Bandwidth Allocation in Task-Oriented URLLC Edge Networks"
   venue: IEEE ICC 2023, Rome, Italy
   pillars: [edge]
+
+- type: conference
+  year: 2023
+  date: Dec. 7-8, 2023
+  authors: P. Le-Thanh, T. Le-Anh, and Q. Le-Trung
+  title: "Research and Development of a Smart Solution for Runtime Web Application Self-Protection"
+  venue: ACM SoICT 2023
+  doi: 10.1145/3628797.3628901
+  pillars: [qsec]
+
+- type: conference
+  year: 2023
+  date: Aug. 2-3, 2023
+  authors: T. Nguyen-Tan, C. Dang-Ngoc, and Q. Le-Trung
+  title: "A Smart Agriculture Solution Includes Intelligent Irrigation and Security"
+  venue: INISCOM 2023, Springer
+  doi: 10.1007/978-3-031-47359-3_1
+  pillars: [dt, qsec]
 
 - type: conference
   year: 2022
@@ -481,6 +723,33 @@
   authors: D. V. Huynh, V.-D. Nguyen, S. R. Khosravirad, and T. Q. Duong
   title: "Minimising Latency for Edge-Cloud Systems with Ultra-Reliable and Low-Latency Communications"
   venue: IEEE ICC 2022, Seoul, South Korea
+  pillars: [edge]
+
+- type: conference
+  year: 2022
+  date: 2022
+  authors: T. N. C. Ta, D. K. Pham, and Q. Le-Trung
+  title: "Development of Libelium-based Reconfigurable Solutions For Smart City Applications"
+  venue: IEEE RIVF 2022
+  doi: 10.1109/RIVF55975.2022.10013829
+  pillars: [dt]
+
+- type: conference
+  year: 2022
+  date: Oct. 19-21, 2022
+  authors: H. Le-Minh-Khanh, K.-H. Le, and Q. Le-Trung
+  title: "A lightweight Machine-learning based Wireless Link Estimation for IoT devices"
+  venue: IEEE APCC 2022, Jeju Island, South Korea
+  doi: 10.1109/APCC55198.2022.9943633
+  pillars: [wireless, edge]
+
+- type: conference
+  year: 2022
+  date: 2022
+  authors: T. Le-Anh, B. Nguyen-Van, and Q. Le-Trung
+  title: "An Intelligent Edge System for Face Mask Recognition Application"
+  venue: INISCOM 2022, Springer LNICST vol. 444
+  doi: 10.1007/978-3-031-08878-0_8
   pillars: [edge]
 
 # ------------------------------------------------------------------- Books
