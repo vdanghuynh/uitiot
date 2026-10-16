@@ -4,6 +4,10 @@ title: People
 permalink: /people/
 description: Members, students, and collaborators of the UiTiOt Research Group at VNUHCM-UIT.
 ---
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="avatar" viewBox="0 0 100 100"><circle cx="50" cy="37" r="17"/><path d="M14 100c0-25 16-39 36-39s36 14 36 39z"/></symbol>
+</svg>
+
 <div class="container page-head">
   <h1>People</h1>
   <p class="lead">Faculty, PhD students, and master's and undergraduate researchers at the Department of Computer Networks, together with advisors and collaborators in Canada, the United Kingdom, Germany, Australia, and Vietnam.</p>
@@ -14,15 +18,27 @@ description: Members, students, and collaborators of the UiTiOt Research Group a
 
     <div class="people-block">
       <h2>Leadership</h2>
-      <div class="lead-people" style="margin-top:20px">
+      <div class="lead-people">
         {% for p in site.data.people.leadership %}
-        <article class="lead-person">
-          <h3>{% if p.url %}<a href="{{ p.url }}" rel="noopener" style="color:inherit">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
-          <p class="title">{{ p.title }}</p>
-          <p>{{ p.role }}.</p>
-          <p class="person-meta">Interests: {{ p.interests }}.</p>
-          {% if p.education %}<p class="person-meta">{{ p.education }}</p>{% endif %}
-          {% if p.recognition %}<p class="person-meta person-recognition">{{ p.recognition }}</p>{% endif %}
+        <article class="pcard pcard-lead">
+          <div class="pc-photo">
+            {%- if p.photo -%}
+            <img src="{{ p.photo | relative_url }}" alt="Portrait of {{ p.name }}" width="400" height="400" loading="lazy">
+            {%- else -%}
+            <svg class="pc-ph" viewBox="0 0 100 100" role="img" aria-label="Portrait of {{ p.name }} (photo to be added)"><use href="#avatar"/></svg>
+            {%- endif -%}
+          </div>
+          <div class="pc-head">
+            <p class="pc-label">{{ p.title }}</p>
+            <h3>{{ p.name }}</h3>
+            <p class="pc-role">{{ p.role }}.</p>
+            {% if p.url %}<a class="pc-link" href="{{ p.url }}" rel="noopener">Homepage</a>{% endif %}
+          </div>
+          <div class="pc-details">
+            <p class="person-meta">Interests: {{ p.interests }}.</p>
+            {% if p.education %}<p class="person-meta">{{ p.education }}</p>{% endif %}
+            {% if p.recognition %}<p class="person-meta person-recognition">{{ p.recognition }}</p>{% endif %}
+          </div>
         </article>
         {% endfor %}
       </div>
@@ -30,11 +46,21 @@ description: Members, students, and collaborators of the UiTiOt Research Group a
 
     <div class="people-block">
       <h2>Core members</h2>
-      <ul class="roster">
+      <ul class="team-grid">
         {% for m in site.data.people.members %}
-        <li>
-          <span class="who">{{ m.name }}<span class="roster-sub">{{ m.title }}</span></span>
-          <p class="what">{{ m.topic }}</p>
+        <li class="pcard pcard-member">
+          <div class="pc-photo">
+            {%- if m.photo -%}
+            <img src="{{ m.photo | relative_url }}" alt="Portrait of {{ m.name }}" width="400" height="400" loading="lazy">
+            {%- else -%}
+            <svg class="pc-ph" viewBox="0 0 100 100" role="img" aria-label="Portrait of {{ m.name }} (photo to be added)"><use href="#avatar"/></svg>
+            {%- endif -%}
+          </div>
+          <div class="pc-head">
+            <p class="pc-label">{{ m.title }}</p>
+            <h3>{{ m.name }}</h3>
+            {% if m.topic %}<p class="pc-role">{{ m.topic }}</p>{% endif %}
+          </div>
         </li>
         {% endfor %}
       </ul>

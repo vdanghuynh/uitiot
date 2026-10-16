@@ -13,7 +13,7 @@ A static site built with Jekyll and hosted on GitHub Pages. All content lives in
 | PhD, master's, undergraduate, completed projects | `_data/supervision.yml` |
 | Advisors and collaborators | `_data/collaborators.yml` |
 | Grants, testbeds, patents, books | `_data/projects.yml` |
-| News items (newest first; the top 5 also scroll in the home page headline) | `_data/news.yml` |
+| News items (newest first) | `_data/news.yml` |
 | Publications (last five years, 2022 onward) | `_data/publications.yml`; older journal and conference papers are kept in `_data/publications_archive.yml` and are not shown |
 | Menu items and their order | `_data/nav.yml` |
 | Colors and fonts | top of `assets/css/main.css` (`:root` block; blue `#0d47a1` and orange `#ff5a24` come from the logo) |
@@ -27,11 +27,11 @@ To add a publication, copy an existing entry in `_data/publications.yml` and set
 
 Save your illustration of the four research areas as `assets/img/research-areas.png` (or `.jpg`, `.webp`). It appears automatically at the top of the Research page. If no file exists, the figure is simply left out. To change the caption or alt text, edit `research_figure` in `_data/group.yml`.
 
-To add a portrait for a person, put the image in `assets/img/people/` and add `photo: /assets/img/people/name.jpg` to that person's entry. The templates do not render photos yet; ask for that change when you have the images.
+To add a portrait for a person, put the image in `assets/img/people/` and add `photo: /assets/img/people/name.jpg` to that person's entry. Photos appear in a round frame on the People page, so use a square crop (about 400 x 400 px) with the face centred. Without a photo, a placeholder silhouette is shown.
 
 ## Deploy on GitHub Pages
 
-The site is served at `https://uitiot.vn/` through the `CNAME` file (`url: "https://uitiot.vn"` and `baseurl: ""` in `_config.yml`). Before the custom domain was set up it lived at `https://vdanghuynh.github.io/uitiot/` with `baseurl: "/uitiot"`. Local preview is now at http://127.0.0.1:4000/.
+The site is configured as a project site at `https://vdanghuynh.github.io/uitiot/` (`url: "https://vdanghuynh.github.io"` and `baseurl: "/uitiot"` in `_config.yml`).
 
 1. On GitHub, create a public repository named `uitiot` under `vdanghuynh`, without a README or .gitignore.
 2. In this folder, run `git init -b main`, `git add .`, `git commit -m "Initial site"`, `git remote add origin https://github.com/vdanghuynh/uitiot.git`, and `git push -u origin main`.
@@ -47,7 +47,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open http://127.0.0.1:4000/. The Gemfile uses the `github-pages` gem so local builds match what GitHub produces. Use Ruby 3.3 for local preview, because Ruby 4.0 is too new for that gem. GitHub builds the site in its own environment, so this only affects your local copy.
+Then open http://127.0.0.1:4000/uitiot/. The Gemfile uses the `github-pages` gem so local builds match what GitHub produces. Use Ruby 3.3 for local preview, because Ruby 4.0 is too new for that gem. GitHub builds the site in its own environment, so this only affects your local copy.
 
 ## One-command local preview
 

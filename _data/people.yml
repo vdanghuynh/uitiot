@@ -1,4 +1,8 @@
-# Core members. Portraits are not rendered yet; keep `url:` to link a name.
+# Leadership and core members.
+# Portraits: save the photo under assets/img/people/ and add a line such as
+#   photo: /assets/img/people/dang-van-huynh.jpg
+# All portraits are shown in a round frame, so use a square crop with the face centred (about 400 x 400 px).
+# Without a `photo:` line a placeholder silhouette is shown. Keep `url:` to link a name.
 leadership:
   - name: Quan Le-Trung
     title: Associate Professor, Dr.techn.
