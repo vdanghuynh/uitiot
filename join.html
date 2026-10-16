@@ -1,0 +1,37 @@
+---
+layout: default
+title: Join us
+permalink: /join/
+description: How to join the UiTiOt Research Group as a student, prospective PhD candidate, visiting researcher, or collaborator.
+---
+<div class="container page-head">
+  <h1>Join us</h1>
+  <p class="lead">We welcome motivated students and collaborators who want to turn optimization and learning methods into systems that work on real networks.</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="prose">
+      <h2 style="margin-top:0">Students at UIT</h2>
+      <p>Undergraduate and master's students at UIT can join through research and thesis projects. The People page lists current topics, from federated learning at the edge to digital twins for UAV networks and quantum reinforcement learning. If a topic fits your interests, or you have your own idea in one of our four areas, write to us.</p>
+
+      <h2>PhD applicants and visiting researchers</h2>
+      <p>We are looking for PhD candidates in digital twins, edge intelligence, next-generation wireless networks, and quantum machine learning and optimization. Visiting researchers and project collaborators are also welcome.</p>
+
+      <h2>What to send</h2>
+      <ul>
+        <li>A short CV and your transcript.</li>
+        <li>One paragraph on the problem you want to work on and why.</li>
+        <li>Links to code, reports, or papers you have written, if any.</li>
+      </ul>
+      <p>Strong foundations in at least one of optimization, machine learning, networking, or programming help you start quickly. Curiosity and persistence matter more than a long list of tools.</p>
+    </div>
+
+    <div class="callout">
+      <h2 style="font-size:1.5rem;margin-bottom:20px">Contact</h2>
+      <div class="contact-cards">
+        {% for c in site.data.group.contacts %}{% include contact-card.html c=c %}{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

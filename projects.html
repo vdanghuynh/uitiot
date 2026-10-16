@@ -1,0 +1,69 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+description: Funded projects, testbeds, patents, and books from the UiTiOt Research Group.
+---
+<div class="container page-head">
+  <h1>Projects</h1>
+  <p class="lead">Funded collaborations, the testbeds we build and use, and the books and patents that came out of them.</p>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-head"><h2>Funded projects</h2></div>
+    {% for p in site.data.projects.funded %}
+    <article class="project">
+      <div>
+        <h3>{{ p.program }}</h3>
+        <p class="meta">{{ p.period }}</p>
+        {% if p.code %}<p class="meta">Contract {{ p.code }}</p>{% endif %}
+        {% if p.partner %}<p class="meta">{{ p.partner }}</p>{% endif %}
+      </div>
+      <div>
+        <p class="project-title">{{ p.title }}</p>
+        <p>{{ p.summary }}</p>
+        <p class="meta">{{ p.role }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><h2>Testbeds and infrastructure</h2>
+      <p>Working hardware keeps our models honest. We validate digital twins, orchestration policies, and learning agents on devices we can touch.</p>
+    </div>
+    {% for p in site.data.projects.infrastructure %}
+    <article class="project">
+      <div>
+        <h3>{{ p.title }}</h3>
+        <p class="meta">{{ p.period }}</p>
+      </div>
+      <div>
+        <p>{{ p.summary }}</p>
+        {% if p.refs %}
+        <ul>
+          {% for r in p.refs %}<li><a href="{{ r.url }}" rel="noopener">{{ r.label }}</a></li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Patents and books</h2></div>
+    {% for o in site.data.projects.outputs %}
+    <article class="project">
+      <div><h3>{{ o.title }}</h3></div>
+      <div><p>{{ o.detail }}</p></div>
+    </article>
+    {% endfor %}
+    <p class="section-more"><a href="{{ '/publications/' | relative_url }}">Full publication list</a></p>
+  </div>
+</section>

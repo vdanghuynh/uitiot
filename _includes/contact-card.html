@@ -1,0 +1,8 @@
+{% assign c = include.c %}
+<article class="contact-card">
+  <h3>{{ c.name }}</h3>
+  <p class="c-title">{{ c.title }}</p>
+  <p>{% for r in c.roles %}{{ r }}<br>{% endfor %}{{ c.institution }}</p>
+  <p>{% for line in c.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+  <p>{% for e in c.emails %}<a href="mailto:{{ e }}">{{ e }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+</article>

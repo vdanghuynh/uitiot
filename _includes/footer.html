@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="{{ '/assets/img/uitiot-logo.png' | relative_url }}" alt="{{ site.data.group.name }}" width="640" height="249" loading="lazy">
+      <p>{{ site.data.group.affiliation }}</p>
+      <p>{{ site.data.group.institution }}</p>
+      <p class="footer-head">Elsewhere</p>
+      <ul class="footer-links">
+        {% for l in site.data.group.links %}
+        <li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p class="footer-name">Contact</p>
+      <div class="contact-cards">
+        {% for c in site.data.group.contacts %}{% include contact-card.html c=c %}{% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.data.group.name }}. Hosted on GitHub Pages.</p>
+  </div>
+</footer>

@@ -1,0 +1,77 @@
+---
+layout: default
+title: Research
+permalink: /research/
+description: Research areas of the UiTiOt Research Group - digital twins and IoT, edge and cloud computing, next-generation wireless networks, and quantum computing and cybersecurity.
+---
+<div class="container page-head">
+  <h1>Research</h1>
+  <p class="lead">Four areas that are national strategic technologies for Vietnam. Each area has its own questions, and all four draw on the same toolbox of optimization, reinforcement learning, and systems experimentation.</p>
+  {% include research-figure.html %}
+</div>
+
+<div class="container">
+  {% for p in site.data.pillars %}
+  <section class="area-section pillar-{{ p.id }}" id="{{ p.id }}">
+    <h2>{{ p.name }}</h2>
+    <p class="lead-text">{{ p.summary }}</p>
+
+    <div class="area-grid">
+      <div>
+        <h3>Directions</h3>
+        <ul class="bullets">
+          {% for t in p.topics %}<li>{{ t }}</li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Recent papers</h3>
+        {% assign shown = 0 %}
+        {% assign total = 0 %}
+        <ul class="bullets">
+          {% for pub in site.data.publications %}
+            {% if pub.pillars contains p.id %}
+              {% if pub.type == "journal" or pub.type == "conference" %}
+                {% assign total = total | plus: 1 %}
+                {% if shown < 4 %}
+                  {% assign shown = shown | plus: 1 %}
+                  <li>{{ pub.title }}<span class="roster-sub">{{ pub.venue }}, {{ pub.year }}</span></li>
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <p class="section-more"><a href="{{ '/publications/' | relative_url }}?area={{ p.id }}">All {{ total }} papers in this area</a></p>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+<section class="section" style="margin-top:64px">
+  <div class="container">
+    <div class="section-head">
+      <h2>How the areas fit together</h2>
+      <p>A digital twin needs edge computing to run close to the physical system. Edge and cloud orchestration needs wireless links that meet latency and reliability targets. Quantum methods and learning-based defenses then address the hardest optimization and security questions across all three. Projects in the group usually touch two or more areas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Platforms and applications</h2>
+      <p>The group grew out of work on wireless sensor networks, IoT reconfiguration, and smart cities, and that practical base still shapes how we test new methods.</p>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Smart cities and IoT</h3>
+        <p>Projects with VINIF and VNUHCM combine IoT, 5G, big data, and AI for urban services. The SmartCity Station senses and predicts air quality, and the UiTiOt testbeds let us reprogram and evaluate large IoT networks.</p>
+      </div>
+      <div>
+        <h3>Edge AI, UAVs, and robots</h3>
+        <p>Our new edge boards, cameras, flight controllers, and robots let us validate digital twins and learning agents on hardware for UAV networks and physical AI.</p>
+      </div>
+    </div>
+    <p class="section-more"><a href="{{ '/projects/' | relative_url }}">See all projects</a></p>
+  </div>
+</section>

@@ -1,0 +1,116 @@
+# Journal and conference papers older than five years (before 2022). Not shown on the site.
+# To show one again, move its entry back into publications.yml.
+
+- type: journal
+  year: 2021
+  date: 2021
+  authors: T. T. Nguyen, L. B. Le, and Q. Le-Trung
+  title: "Computation Offloading in MIMO Based Mobile Edge Computing Systems Under Perfect and Imperfect CSI Estimation"
+  venue: IEEE Transactions on Services Computing, vol. 14, no. 6
+  pillars: [edge, wireless]
+
+- type: journal
+  year: 2020
+  date: 2020
+  authors: K.-H. Le and Q. Le-Trung
+  title: "User-driven Adaptive Sampling for Massive Internet of Things"
+  venue: IEEE Access, vol. 8
+  pillars: [dt]
+
+- type: journal
+  year: 2020
+  date: 2020
+  authors: Q. T. Ngo, D. N. M. Dang, and Q. Le-Trung
+  title: "An Extreme Power Saving Directional MAC Protocol in IEEE 802.11ah Networks"
+  venue: IET Networks
+  pillars: [wireless]
+
+- type: journal
+  year: 2020
+  date: 2020
+  authors: D. N. M. Dang, Q. T. Ngo, Q. Le-Trung, and L. B. Le
+  title: "An Adaptive and Cooperative MAC Protocol in Vehicular Ad hoc Network: Design and Performance Analysis"
+  venue: International Journal of Ad Hoc and Ubiquitous Computing
+  pillars: [wireless]
+
+- type: journal
+  year: 2020
+  date: Nov. 2020
+  authors: D. Huynh-Van and Q. Le-Trung
+  title: "SD-IoTR: An SDN-based Internet of Things Reprogramming Framework"
+  venue: IET Networks, vol. 9, no. 6, pp. 305-314
+  pdf: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-net.2019.0223
+  pillars: [dt]
+
+- type: conference
+  year: 2021
+  date: Dec. 7-11, 2021
+  authors: D. V. Huynh, S. R. Khosravirad, L. D. Nguyen, and T. Q. Duong
+  title: "Multiple Relay Robots-Assisted URLLC for Industrial Automation with Deep Neural Networks"
+  venue: IEEE GLOBECOM 2021, Madrid, Spain
+  abstract: https://ieeexplore.ieee.org/document/9685534
+  pillars: [wireless]
+
+- type: conference
+  year: 2021
+  date: Apr. 22-23, 2021
+  authors: T. Le-Anh, Q. Ngo-Van, P. Vo-Huy, D. Huynh-Van, and Q. Le-Trung
+  title: "A Container-based Edge Computing System for Smart Healthcare Applications"
+  venue: Springer INISCOM 2021, Hanoi, Vietnam
+  abstract: https://doi.org/10.1007/978-3-030-77424-0_27
+  pillars: [edge, dt]
+
+- type: conference
+  year: 2019
+  date: Aug. 19-20, 2019
+  authors: H. Le-Viet, D. Huynh-Van, and Q. Le-Trung
+  title: "UiTiOt-Vlab: A Low Cost Physical IoTs Testbed Based on Over-The-Air Programming Approach"
+  venue: 5th EAI INISCOM 2019, Ho Chi Minh City, Vietnam
+  abstract: https://link.springer.com/chapter/10.1007/978-3-030-30149-1_15
+  pillars: [dt]
+
+- type: conference
+  year: 2019
+  date: Mar. 20-22, 2019
+  authors: D. Huynh-Van, N. Le-Thi-Chau, K. Ngo-Khanh, and Q. Le-Trung
+  title: "Towards an Integration of AES Cryptography into Deluge Dissemination Protocol for Securing IoTs Reconfiguration"
+  venue: IEEE RIVF 2019, Danang, Vietnam
+  abstract: https://ieeexplore.ieee.org/document/8713757
+  pillars: [dt, qsec]
+
+- type: conference
+  year: 2018
+  date: Dec. 6-7, 2018
+  authors: N. Ly-Trong, C. Dang-Le-Bao, D. Huynh-Van, and Q. Le-Trung
+  title: "UiTiOt v3: A Hybrid Testbed for Evaluation of Large-Scale IoT Networks"
+  venue: ACM SoICT 2018, pp. 155-162, Danang, Vietnam
+  abstract: https://dl.acm.org/citation.cfm?id=3287935
+  pillars: [dt]
+
+- type: conference
+  year: 2018
+  date: Aug. 27-28, 2018
+  authors: D. Huynh-Van, N. Le-Thi-Chau, K. Ngo-Khanh, and Q. Le-Trung
+  title: "Development and Deployment of An IoT-based Reconfigurable System: A Case Study for Smart Garden"
+  venue: 4th EAI INISCOM 2018, LNICST vol. 257, pp. 243-252, Da Nang, Vietnam
+  abstract: https://link.springer.com/chapter/10.1007/978-3-030-05873-9_20
+  pillars: [dt]
+
+- type: conference
+  year: 2018
+  date: Jul. 18-20, 2018
+  authors: D. Huynh-Van, K. Tran-Quoc, and Q. Le-Trung
+  title: "An Empirical Study on Approaches of Internet of Things Reconfiguration"
+  venue: IEEE ICCE 2018, pp. 57-62, Hue, Vietnam
+  abstract: https://ieeexplore.ieee.org/abstract/document/8465579
+  pillars: [dt]
+
+- type: conference
+  year: 2017
+  date: Sep. 4-6, 2017
+  authors: D. Huynh-Van, K. Tran-Quoc, and Q. Le-Trung
+  title: "Toward a Real-Time Development and Deployment of IoTs Application for Smart Garden on OpenStack Cloud"
+  venue: Springer INISCOM 2017, LNICST vol. 221, pp. 121-130, Ho Chi Minh City, Vietnam
+  abstract: https://doi.org/10.1007/978-3-319-74176-5_12
+  pillars: [dt, edge]
+

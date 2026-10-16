@@ -1,0 +1,68 @@
+# Four research areas. The `id` is also the tag used in publications.yml.
+- id: dt
+  image: /assets/img/areas/dt.png
+  image_width: 615
+  image_height: 262
+  name: Digital Twins and IoT
+  line1: Digital Twins
+  line2: and IoT
+  summary: >-
+    We design digital twins that track networks, devices, and physical processes closely enough to
+    support real decisions, from placing services to steering UAVs. Our IoT background, from
+    reprogrammable testbeds to smart-home and smart-city deployments, keeps the models tied to working systems.
+  topics:
+    - Optimal digital twin design
+    - AI-driven digital twin decision-making
+    - Joint communication, computing, and control design
+    - Intelligent IoT systems and testbeds
+
+- id: edge
+  image: /assets/img/areas/edge.png
+  image_width: 597
+  image_height: 279
+  name: Edge and Cloud Computing
+  line1: Edge and
+  line2: Cloud Computing
+  summary: >-
+    We study how to place, schedule, and orchestrate computation across devices, edge nodes, and the cloud
+    under strict latency, reliability, and energy limits. Current directions include microservice autoscaling,
+    serverless AI inference, federated learning at the edge, and carbon-aware operation.
+  topics:
+    - Task offloading and service placement
+    - Distributed intelligence and edge AI
+    - Service orchestration for microservices and serverless inference
+    - Sustainability-aware computing
+
+- id: wireless
+  image: /assets/img/areas/wireless.png
+  image_width: 504
+  image_height: 346
+  name: Next-Generation Wireless Networks
+  line1: Next-Generation
+  line2: Wireless Networks
+  summary: >-
+    We develop resource allocation, trajectory design, and security methods for 6G systems that span space,
+    air, and ground. Emphasis falls on UAV networks for the low-altitude economy and on intelligent,
+    programmable radio access in O-RAN.
+  topics:
+    - 6G and space-air-ground integrated networks (SAGIN)
+    - Low-altitude UAV networks
+    - O-RAN and xApp reliability
+    - Integrated sensing and communications (ISAC)
+
+- id: qsec
+  image: /assets/img/areas/qsec.png
+  image_width: 563
+  image_height: 360
+  name: Quantum Computing and Cybersecurity
+  line1: Quantum Computing
+  line2: and Cybersecurity
+  summary: >-
+    We apply quantum machine learning and quantum optimization, including runs on real quantum hardware,
+    to hard resource management problems in networks and cloud systems. In parallel, we build learning-based
+    intrusion detection and defense for IoT, SDN, and O-RAN that holds up under attack, drift, and poisoned data.
+  topics:
+    - Quantum optimization for networks and cloud scheduling
+    - Quantum reinforcement learning for resource allocation
+    - AI-driven intrusion detection and prevention
+    - Robust and federated learning under attack

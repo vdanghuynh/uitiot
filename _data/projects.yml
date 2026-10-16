@@ -1,0 +1,91 @@
+funded:
+  - title: Digital Twins, Next-Generation Wireless, and Quantum Technologies
+    program: British Council TNE Exploratory Grant
+    period: 2026 to 2027
+    partner: Middlesex University London
+    role: Principal investigator, Dang Van Huynh
+    summary: >-
+      An exploratory partnership between VNUHCM-UIT and Middlesex University London that connects digital twin
+      research, next-generation wireless networks, and quantum technologies, and prepares joint research
+      and education activities between the two institutions.
+    pillars: [dt, wireless, qsec]
+
+  - title: Emerging Big Data/AI and IoTs/5G Technologies for Smart Cities
+    code: VINIF.2019.DA01
+    program: Vingroup Innovation Foundation (VINIF)
+    period: Sep. 2019 to Sep. 2022
+    partner: INRS, Canada, and HCMUT, VNUHCM
+    role: Principal investigator, Quan Le-Trung. Co-PIs, Long Le Bao (INRS) and Tho Quan-Thanh (HCMUT).
+    summary: >-
+      Technology solutions that combine IoT, 5G, big data processing, and artificial intelligence for smart cities.
+      A 2024 book with the same title (VNUHCM Publisher) accompanies the project.
+    pillars: [dt, edge]
+
+  - title: Reconfiguration in the Internet of Things
+    code: B2018-26-01
+    program: Vietnam National University Ho Chi Minh City (VNUHCM)
+    period: Apr. 2018 to Apr. 2020
+    partner: INRS, Canada, and TDT University
+    role: Principal investigator, Quan Le-Trung
+    summary: >-
+      Methods to reconfigure and reprogram IoT devices and networks remotely. The same theme runs through the
+      SD-IoTR framework, the UiTiOt-Vlab testbed, and the 2026 patent on remote peripheral reprogramming.
+    pillars: [dt]
+
+  - title: Wireless Sensor Network Testbed for Evaluating and Validating WSN Applications and Protocols
+    code: 211/2017/HĐ-SKHCN
+    program: Department of Science and Technology, Ho Chi Minh City
+    period: Nov. 2017 to Nov. 2019
+    role: Principal investigator, Quan Le-Trung
+    summary: >-
+      A wireless sensor network testbed that lets researchers and developers check WSN applications and protocols
+      on real nodes before deployment. It started the line of UiTiOt testbeds.
+    pillars: [dt]
+
+infrastructure:
+  - title: UiTiOt testbed family
+    period: Since 2017
+    summary: >-
+      The group built its identity on IoT testbeds. UiTiOt v3 is a hybrid testbed for evaluating large-scale
+      IoT networks, and UiTiOt-Vlab is a low-cost physical IoT testbed based on over-the-air programming.
+      Both continue to inform how we validate digital twins and edge orchestration on real devices.
+    refs:
+      - label: UiTiOt v3, ACM SoICT 2018
+        url: https://dl.acm.org/citation.cfm?id=3287935
+      - label: UiTiOt-Vlab, EAI INISCOM 2019
+        url: https://link.springer.com/chapter/10.1007/978-3-030-30149-1_15
+
+  - title: Edge AI, UAV, and robotics testbed
+    period: 2026
+    summary: >-
+      Newly procured hardware, including Orange Pi 5 Pro edge boards, OAK-D-S2 cameras, Pixhawk 6X Pro flight controllers,
+      JetAuto Pro and Unitree Go2 Edu robots, supports three research streams: edge intelligence and federated learning,
+      digital twins for space-air-ground networks, and multi-agent physical AI.
+
+  - title: SmartCity Station
+    period: Funded by UIT, VNUHCM
+    summary: >-
+      A platform for sensing and predicting the Air Quality Index (AQI), built as part of our smart-city work
+      with low-cost IoT sensors and machine learning.
+    refs:
+      - label: smartcity.uit.edu.vn
+        url: http://smartcity.uit.edu.vn
+
+outputs:
+  - title: Book
+    detail: >-
+      Emerging Big Data/AI and IoTs/5G Technologies for Smart Cities. VNUHCM Publisher, 2024.
+      Authors: Quan Le-Trung, Long Le, Tho Quan, Thuat Nguyen-Khanh, Chuong Dang-Le-Bao.
+  - title: Patent
+    detail: >-
+      Remote reconfiguration and reprogramming of peripheral devices over the network in a virtual laboratory.
+      Vietnam exclusive patent 1-0056741 B, March 2026. Inventors: Quan Le-Trung, Dang Van Huynh, Nhan Ly-Trong.
+  - title: Textbook
+    detail: >-
+      Internet of Things Technologies and Applications (in Vietnamese). VNUHCM Publisher, 2021.
+      Authors: Quan Le-Trung, Dang Huynh-Van, Thuat Nguyen-Khanh.
+  - title: Book chapters
+    detail: >-
+      Digital twin-enabled aerial edge networks with URLLC, in Digital Twins for 6G (IET, 2024); and industrial IoT
+      clustering with joint blocklength and power optimization for relay robots, in Ultra-Reliable and Low-Latency
+      Communications: Theory and Practice (Wiley and IEEE Press, 2023).

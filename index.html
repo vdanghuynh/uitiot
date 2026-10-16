@@ -1,0 +1,128 @@
+---
+layout: default
+permalink: /
+body_class: home
+---
+{% assign n_phd = site.data.supervision.phd | size %}
+{% assign n_ms = site.data.supervision.masters | size %}
+{% assign n_ug = site.data.supervision.undergraduate | size %}
+{% assign n_projects = n_phd | plus: n_ms | plus: n_ug %}
+{% assign n_core = site.data.people.leadership | size | plus: site.data.people.members.size %}
+{% assign countries = site.data.collaborators | map: "country" | uniq %}
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>{{ site.tagline }}</h1>
+      <p class="hero-lead">{{ site.data.group.mission }}</p>
+      <div class="actions">
+        <a class="button" href="{{ '/research/' | relative_url }}">Explore our research</a>
+        <a class="button button-quiet" href="{{ '/join/' | relative_url }}">Join the group</a>
+      </div>
+      <p class="hero-affil">{{ site.data.group.affiliation }}, VNUHCM-UIT. Active since {{ site.data.group.founded }}.</p>
+    </div>
+    <div>
+      {% include pillar-graph.html %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="areas">
+  <div class="container">
+    <div class="section-head">
+      <h2>Four research areas</h2>
+      <p>Our research centers on four areas that are national strategic technologies for Vietnam. They share one method: formulate the system as an optimization or learning problem, solve it, and test the result on realistic platforms.</p>
+    </div>
+    <ul class="pillar-list">
+      {% for p in site.data.pillars %}
+      <li class="pillar-row pillar-{{ p.id }}">
+        <div class="pillar-head">
+          <h3><a href="{{ '/research/' | relative_url }}#{{ p.id }}">{{ p.name }}</a></h3>
+          {% if p.image %}
+          <a class="pillar-figure" href="{{ '/research/' | relative_url }}#{{ p.id }}" tabindex="-1" aria-hidden="true">
+            <img src="{{ p.image | relative_url }}" alt="" width="{{ p.image_width }}" height="{{ p.image_height }}" loading="lazy">
+          </a>
+          {% endif %}
+        </div>
+        <div>
+          <p>{{ p.summary }}</p>
+          <p class="pillar-topics">{{ p.topics | join: ", " }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" id="selected">
+  <div class="container">
+    <div class="section-head">
+      <h2>Selected publications</h2>
+      <p>Recent journal papers from the group and its close collaborators.</p>
+    </div>
+    <ul class="pub-list">
+      {% for pub in site.data.publications %}
+        {% if pub.featured %}{% include pub-item.html pub=pub %}{% endif %}
+      {% endfor %}
+    </ul>
+    <p class="section-more"><a href="{{ '/publications/' | relative_url }}">See all publications</a></p>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container split">
+    <div>
+      <h2>Projects</h2>
+      <p style="margin-top:14px">Funded collaborations, IoT and edge testbeds, and the patents and books that came out of them.</p>
+      <p class="section-more"><a href="{{ '/projects/' | relative_url }}">See all projects</a></p>
+    </div>
+    <ul class="compact-list">
+      {% for p in site.data.projects.funded %}
+      <li>{{ p.title }}<span class="sub">{{ p.program }}, {{ p.period }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" id="people">
+  <div class="container split">
+    <div>
+      <h2>People</h2>
+      <p style="margin-top:14px">The group is co-led by {{ site.data.people.leadership[0].name }} and {{ site.data.people.leadership[1].name }}. {{ n_core }} core members work together, and we currently supervise {{ n_projects }} PhD, master's, and undergraduate research projects.</p>
+      <p class="section-more"><a href="{{ '/people/' | relative_url }}">Meet the group</a></p>
+    </div>
+    <div>
+      <h2>Collaborators</h2>
+      <p style="margin-top:14px">We work with researchers in {{ countries | join: ", " }}, and we publish with them regularly.</p>
+      <p class="section-more"><a href="{{ '/people/' | relative_url }}#collaborators">See our collaborators</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-head">
+      <h2>Latest news</h2>
+    </div>
+    <ul class="news-list">
+      {% for item in site.data.news limit: 5 %}
+      <li class="news-item">
+        <span class="news-date">{{ item.date }}</span>
+        <p>{{ item.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="section-more"><a href="{{ '/news/' | relative_url }}">All news</a></p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Work with us</h2>
+    <p>We welcome students at UIT, prospective PhD candidates, and collaborators who want to turn optimization and learning methods into systems that run on real networks.</p>
+    <div class="actions">
+      <a class="button" href="{{ '/join/' | relative_url }}">How to join</a>
+      <a class="button button-quiet" href="mailto:{{ site.data.group.contact_email }}">Email the group</a>
+    </div>
+  </div>
+</section>

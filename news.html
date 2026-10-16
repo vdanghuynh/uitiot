@@ -1,0 +1,23 @@
+---
+layout: default
+title: News
+permalink: /news/
+description: News from the UiTiOt Research Group, including accepted papers, grants, courses, and awards.
+---
+<div class="container page-head">
+  <h1>News</h1>
+  <p class="lead">Accepted papers, grants, new courses, and recognition for the group and its members.</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <ul class="news-list">
+      {% for item in site.data.news %}
+      <li class="news-item">
+        <span class="news-date">{{ item.date }}</span>
+        <p>{% if item.url %}<a href="{{ item.url }}" rel="noopener">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

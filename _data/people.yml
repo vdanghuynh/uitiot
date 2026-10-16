@@ -1,0 +1,34 @@
+# Core members. Portraits are not rendered yet; keep `url:` to link a name.
+leadership:
+  - name: Quan Le-Trung
+    title: Associate Professor, Dr.techn.
+    role: Head, Department of Computer Networks; Dean, Faculty of Computer Networks and Communications; co-lead of the group
+    interests: Wireless embedded Internet, cyber-physical systems, Internet of Things, cloud and edge computing, smart cities, networking
+    education: Dr.techn. in telecooperations, Johannes Kepler University Linz, Austria (2007, with distinction), followed by postdoctoral research at Linz and the University of Oslo, Norway. M.Eng., Asian Institute of Technology, Thailand (2002). B.Eng., Ho Chi Minh City University of Technology (1998).
+    url: https://sites.google.com/uit.edu.vn/quanletrung/
+
+  - name: Dang Van Huynh
+    title: Lecturer, PhD
+    role: Co-lead of the group; leads the research team on digital twins, edge intelligence, and quantum optimization
+    interests: Digital twins, edge and cloud computing, 6G and UAV networks, quantum machine learning and optimization
+    education: PhD, Queen's University Belfast, UK (2024 Best Thesis Award). Postdoctoral fellow, Memorial University of Newfoundland, Canada, in the CERC-NGCT program. Associate Editor, Quantum Machine Intelligence (Springer).
+    recognition: Listed among the World's Top 2% Scientists 2026 (Stanford University and Elsevier, single-year impact, Networking and Telecommunications).
+    url: https://sites.google.com/site/vdanghuynh/
+
+members:
+  - name: Thuat Nguyen-Khanh
+    title: MSc, PhD student
+    topic: A sustainable digital twin framework with decentralized machine learning for smart city
+  - name: Chuong Dang-Le-Bao
+    title: MSc, PhD student
+    topic: Agentic digital twin architecture for 6G UAV networks
+  - name: Tuan Le-Anh
+    title: MSc
+  - name: Binh Bui-Thanh
+    title: MSc
+  - name: Luan Van-Thien
+    title: MSc
+  - name: Bao Nguyen-Van
+    title: MSc
+  - name: Phat Phan-Trung
+    title: MSc

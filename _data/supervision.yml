@@ -1,0 +1,135 @@
+# Student projects supervised in the group. Move entries between lists as students progress.
+phd:
+  - name: Do Minh Tien
+    topic: Combining computer vision and wireless signals to recognize and locate people
+  - name: Dang Le Bao Chuong
+    topic: Agentic digital twin architecture for 6G UAV networks
+    year: 2026
+  - name: Nguyen Khanh Thuat
+    topic: A sustainable digital twin framework with decentralized machine learning for smart city
+    year: 2026
+
+masters:
+  - name: Pham Ngoc Tam
+    topic: Efficient resource management in hybrid quantum-classical systems
+  - name: Nguyen Tan Kiet
+    topic: Federated-learning intrusion detection system on NVIDIA BlueField-3
+  - name: Le Chi Dai
+    topic: Intrusion detection with federated and split learning, and security for IoT applications
+  - name: Tran Tan Dat
+    topic: Federated learning and blockchain
+  - name: Phan Van Minh
+    topic: Adaptive age of information for federated digital twins in healthcare networks
+  - name: Pham Thai Bao
+    topic: Federated learning in software-defined network intrusion detection
+  - name: Le Viet Hung
+    topic: Elastic scheduling for quantum cloud workloads
+  - name: Le Trieu Vi
+    topic: MLOps orchestration for edge-deployed digital twins in 6G
+  - name: Duong Thi An
+    topic: AI-driven threat detection in next-G wireless systems
+  - name: Nguyen Van Cuong
+    topic: Closed-loop network digital twin for security in edge networks
+  - name: Dinh Hoang Loc
+    topic: Federated continual learning for intrusion detection in UAV networks
+  - name: Nguyen Ngoc Tieu Long
+    topic: Kernel defense and runtime security for Kubernetes
+  - name: Ngo Quang Huy
+    topic: Resilient federated LoRA fine-tuning at the edge
+  - name: Nguyen Minh Quan
+    topic: Multi-agent reinforcement learning for serverless AI inference
+
+undergraduate:
+  - name: Le Trung Kien, Tran Thi Thuy Tien
+    topic: Proactive horizontal autoscaling for microservice
+  - name: Phan Nguyen Hoai An
+    topic: Quantum reinforcement learning for adaptive resource management
+  - name: Vo Thi Hong Phuc, Huynh Thi Phuong Nghi
+    topic: LLM-guided reward adaptation for QoS-aware routing in SDN
+  - name: Nguyen Van Tien, Nguyen Duc Tho
+    topic: Explainable AI and digital twin for microservice systems
+  - name: Tran Thuan Then
+    topic: Canary release orchestration of xApps in O-RAN architectures
+  - name: Nguyen Huu Luan
+    topic: PINNs and multi-agent reinforcement learning for UAV networks
+  - name: Truong Dao Anh Duy, Doan Thanh De
+    topic: LLM-enhanced reinforcement learning for UAV networks
+  - name: Doan Van Tai, Nguyen Truong Quang
+    topic: AI-driven optimal decision-making in network digital twin
+
+completed:
+  - name: Phung Viet Bac, Tran Phuoc Dai
+    topic: Joint optimization of model variants and service placement in edge computing
+    date: Jul. 2026
+  - name: Tran Hoai Phu
+    topic: Research on autonomous navigation architectures for mobile robots in unknown environments based on multimodal data
+    date: Jul. 2026
+  - name: Nguyen Duong Hoang Phuc, Phan Van Tai
+    topic: A digital twin-assisted multi-agent reinforcement learning framework for safe multi-UAV trajectory coordination
+    date: Jul. 2026
+  - name: Le Minh Hoang, Le Trung Hung
+    topic: Energy consumption management solution in smart homes based on digital twin technology
+    date: Jan. 2026
+  - name: Pham Minh Quan, Nguyen Dinh Minh Tam
+    topic: A hybrid reinforcement learning and leader beluga whale optimization-based home energy management system
+    date: Jan. 2026
+
+# Master's theses completed under Quan Le-Trung (from his public page), newest first.
+alumni:
+  - year: 2025
+    name: Le Trong Tin
+    topic: Reliable charity donation platform using blockchain
+  - year: 2024
+    name: Le Thanh Phuc
+    topic: Smart runtime self-protection for web applications
+  - year: 2024
+    name: Nguyen Van Bao
+    topic: Edge-computing framework for smart cameras
+  - year: 2024
+    name: Phan Trung Phat
+    topic: Deep reinforcement learning task placement for IoT edge computing
+  - year: 2024
+    name: Van Thien Luan
+    topic: Swarm learning-based intrusion detection for abnormal IoT traffic
+  - year: 2022
+    name: Nguyen Chau Long
+    topic: Smart eHealthcare applications based on edge computing
+  - year: 2022
+    name: Phan Ba Tung
+    topic: AI-based smart home solution
+  - year: 2022
+    name: Le Anh Tuan
+    topic: Smart edge system for face recognition without masks
+  - year: 2021
+    name: Vu Ngoc Khoa
+    topic: Human action recognition using CSI WiFi and machine learning
+  - year: 2020
+    name: Le Minh Khanh Hoi
+    topic: Deploying deep learning models as services on edge nodes
+  - year: 2020
+    name: Le Thanh Phuong
+    topic: Smart air pollution measurement app using reconfiguration
+  - year: 2020
+    name: Tong Duy Tan
+    topic: Smart home with a virtual assistant for Vietnamese voice control
+  - year: 2019
+    name: Phan Anh Thang
+    topic: Smart garden control over Zigbee
+  - year: 2019
+    name: Ho Van Phung
+    topic: Building and reconfiguring an IoT gateway on Raspberry Pi
+  - year: 2019
+    name: Nguyen Khanh Thuat
+    topic: Smart context management for reconfiguration in IoT
+  - year: 2018
+    name: Ly Trong Nhan
+    topic: Testbed for IoT systems with large node counts
+  - year: 2018
+    name: Huynh Van Dang
+    topic: Programmable IoT architecture based on software-defined networking
+  - year: 2014
+    name: Hong Vuong Anh
+    topic: Wireless ad-hoc router development
+  - year: 2013
+    name: Tran Phuoc Hiep
+    topic: Mobility management in all-IP networks (proxy MIPv6)

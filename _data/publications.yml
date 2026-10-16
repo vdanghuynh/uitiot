@@ -1,0 +1,527 @@
+# Publications, newest first within each type.
+# type: journal | conference | book | patent
+# pillars: any of dt, edge, wireless, qsec (see _data/pillars.yml)
+# featured: true shows the paper on the home page
+# Optional fields: status, note, abstract (URL), pdf (URL)
+
+# ---------------------------------------------------------------- Journals
+- type: journal
+  year: 2026
+  date: Sep. 2026
+  status: Accepted
+  authors: A. T. Duong, H. Dao, T. A. Le, H. X. Nguyen, Q. Le-Trung, and D. V. Huynh
+  title: "GRADFA: A Unified Gradient-Based Attribution Framework for Backdoor Detection and Mitigation in DRL-Based O-RAN xApps"
+  venue: IEEE Open Journal of the Communications Society
+  pillars: [wireless, qsec]
+  featured: true
+
+- type: journal
+  year: 2026
+  date: 2026
+  authors: T. Do, Q. Le-Trung, and P. T. H. Nguyen
+  title: "PRoFENCH: A Systematic Study of Multimodal Fusion and Generalization in WiFi-Vision Wireless Sensing for People Counting"
+  venue: Ad Hoc Networks
+  pillars: [wireless]
+
+- type: journal
+  year: 2026
+  date: 2026
+  authors: B. Pham-Thai, M. Nguyen-Le-Ha, T. Nguyen-Khanh, and Q. Le-Trung
+  title: "An Approach to Attack Classification for Programmable Network Infrastructure Using Machine Learning and Deep Learning Solutions"
+  venue: IEEE Access
+  pillars: [qsec]
+
+- type: journal
+  year: 2026
+  date: 2026
+  authors: T. Nguyen-Khanh, A. Pham-Nguyen-Hai, L. Van-Thien, and Q. Le-Trung
+  title: "A Multimodal Swarm Learning Approach for DDoS Detection in Internet of Things Infrastructure"
+  venue: EAI Endorsed Transactions on Industrial Networks and Intelligent Systems, vol. 13, no. 1
+  pillars: [qsec, edge]
+
+- type: journal
+  year: 2026
+  date: Jul. 2026
+  authors: T. D. Hao, H. H. Hoang, L. H. Hien, D. V. Huynh, Q. Le-Trung, V.-H. Pham, and P. T. Duy
+  title: "MORPH-IDS: A Context-Driven Multi-Agent Reinforcement Learning Framework for Drift-Aware Moving Target Defense in Adversarial-Robust Intrusion Detection"
+  venue: Computer Networks
+  abstract: https://doi.org/10.1016/j.comnet.2026.112541
+  pillars: [qsec]
+  featured: true
+
+- type: journal
+  year: 2026
+  date: May 2026
+  authors: V. P. Pham, D. V. Huynh, H. Jung, B. Canberk, S. L. Cotton, H. Shin, and T. Q. Duong
+  title: "Hybrid Quantum-Classical Optimization for Joint Beamforming and Discrete Phase Shift Design in STAR-RIS 6G Networks"
+  venue: IEEE Internet of Things Journal
+  abstract: https://ieeexplore.ieee.org/document/11525419
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2026/05/final-manuscript.pdf
+  pillars: [wireless, qsec]
+  featured: true
+
+- type: journal
+  year: 2026
+  date: Jul. 2026
+  authors: T. T. Khang, T. H. Duc, D. V. Huynh, V.-H. Pham, and P. T. Duy
+  title: "P4P: A Probe-Guided Anti-Poisoning Defense for Federated Learning-based Intrusion Detection in IoT Networks under Non-IID Data"
+  venue: Journal of Network and Computer Applications, vol. 251
+  abstract: https://www.sciencedirect.com/science/article/pii/S1084804526000779
+  pillars: [qsec]
+
+- type: journal
+  year: 2026
+  date: 2026
+  authors: T. T. Bui, D. V. Huynh, V. Sharma, K. Singh, O. A. Dobre, H. Shin, and T. Q. Duong
+  title: "UAV-assisted physical layer security for space-air-ground integrated networks (SAGIN) with multiple eavesdroppers"
+  venue: IEEE Journal on Selected Areas in Communications, vol. 44, pp. 1888-1902
+  abstract: https://ieeexplore.ieee.org/document/11268275
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/11/Final-manuscript-12.pdf
+  pillars: [wireless, qsec]
+  featured: true
+
+- type: journal
+  year: 2026
+  date: Feb. 2026
+  authors: S. C. Prabhashana, D. V. Huynh, H. Jung, C. Berk, S. L. Cotton, and T. Q. Duong
+  title: "Quantum Deep Reinforcement Learning for URLLC Satellite-Air-Ground Integrated Networks with Digital Twin Applications"
+  venue: IEEE Internet of Things Journal, vol. 13, no. 3, pp. 4230-4246
+  abstract: https://ieeexplore.ieee.org/document/11244103
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/11/Final-manuscript-11.pdf
+  pillars: [dt, wireless, qsec]
+
+- type: journal
+  year: 2026
+  date: Feb. 2026
+  authors: D. V. Huynh, S. R. Khosravirad, S. L. Cotton, H. Shin, and T. Q. Duong
+  title: "Multi-Agent Reinforcement Learning for Optimal Resource Allocation in Space-Air-Ground Integrated Networks"
+  venue: IEEE Internet of Things Journal, vol. 13, no. 3, pp. 3618-3629
+  abstract: https://ieeexplore.ieee.org/abstract/document/11124243
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/08/Final-manuscript-7.pdf
+  pillars: [wireless, edge]
+
+- type: journal
+  year: 2025
+  date: Oct. 2025
+  authors: V. P. Pham, D. V. Huynh, E. Ak, L. D. Nguyen, O. A. Dobre, B. Canberk, and T. Q. Duong
+  title: "Joint Optimal Design for Speed and Routing in Maritime Logistics for Green Supply Chain: A Quantum Approximate Optimization Algorithm Approach"
+  venue: IEEE Internet of Things Journal, vol. 12, no. 19, pp. 39556-39571
+  abstract: https://ieeexplore.ieee.org/document/11105081
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/07/Final-manuscript-4.pdf
+  pillars: [qsec]
+
+- type: journal
+  year: 2025
+  date: Aug. 2025
+  authors: D. V. Huynh, S. R. Khosravirad, V. Sharma, J. Kim, B. Canberk, and T. Q. Duong
+  title: "Carbon-Aware Edge Computing for Internet of Everything Networks: A Digital Twin Approach"
+  venue: IEEE Internet of Things Journal, vol. 12, no. 15, pp. 29240-29251
+  abstract: https://ieeexplore.ieee.org/document/10976254/
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/04/Final-manuscript-1.pdf
+  pillars: [dt, edge]
+  featured: true
+
+- type: journal
+  year: 2025
+  date: Jul. 2025
+  authors: T. T. Bui, D. V. Huynh, L. D. Nguyen, H. Jung, and T. Q. Duong
+  title: "Joint Phase-Shift Design and Power Control for Near-and Far-Field Communications in Extremely Large RIS-aided UAV Networks"
+  venue: IEEE Internet of Things Journal, vol. 12, no. 13, pp. 22658-22668
+  abstract: https://ieeexplore.ieee.org/document/10955682
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/04/Final-Article.pdf
+  pillars: [wireless]
+
+- type: journal
+  year: 2025
+  date: 2025
+  authors: A. Masaracchia, D. V. Huynh, T. Q. Duong, O. A. Dobre, A. Nallanathan, and B. Canberk
+  title: "The role of Digital Twin in 6G-based URLLCs: Current contributions, Research Challenges, and Next Directions"
+  venue: IEEE Open Journal of the Communications Society, vol. 6, pp. 1202-1215
+  pdf: https://doi.org/10.1109/OJCOMS.2025.3540287
+  note: Top 5 most popular papers on Digital Twin 2025
+  pillars: [dt, wireless]
+
+- type: journal
+  year: 2025
+  date: Oct. 2025
+  authors: S. C. Prabhashana, D. V. Huynh, K. Singh, H.-J. Zepernick, A. Dobre, H. Shin, and T. Q. Duong
+  title: "Machine Learning-based Resource Allocation in 6G Integrated Space and Terrestrial Networks-aided Intelligent Autonomous Transportation"
+  venue: IEEE Transactions on Intelligent Transportation Systems, vol. 26, no. 10, pp. 17750-17762
+  abstract: https://ieeexplore.ieee.org/document/10977731
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/Final-manuscript.pdf
+  pillars: [wireless]
+
+- type: journal
+  year: 2025
+  date: Mar. 2025
+  authors: D. V. Huynh, A. Dobre, and T. Q. Duong
+  title: "Optimal Service Placement for 6G Edge Computing with Quantum-Centric Optimisation in Real Quantum Hardware"
+  venue: IEEE Communications Letters, vol. 29, no. 3, pp. 448-452
+  abstract: https://ieeexplore.ieee.org/document/10816612
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/J-2025-IEEE-COML-Optimal-Service-Placement-for-6G-Edge-Computing-with-Quantum-Centric-Optimisation-in-Real-Quantum-Hardware.pdf
+  pillars: [edge, qsec]
+
+- type: journal
+  year: 2025
+  date: Mar. 2025
+  authors: T. T. Bui, T. Q. Do, D. V. Huynh, T. Do-Duy, L. D. Nguyen, T.-V. Cao, V. Sharma, and T. Q. Duong
+  title: "Task Offloading Optimization for UAV-aided NOMA Networks with Coexistence of Near-field and Far-field Communications"
+  venue: IEEE Transactions on Green Communications and Networking, vol. 9, no. 1, pp. 327-337
+  abstract: https://ieeexplore.ieee.org/abstract/document/10566877
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/J-2024-IEEE-TGCN-Task-Offloading-Optimization-for-UAV-aided-NOMA-Networks-with-Coexistence-of-Near-field-and-Far-field-Communications.pdf
+  pillars: [wireless, edge]
+
+- type: journal
+  year: 2024
+  date: 2024
+  authors: T. Nguyen-Tan and Q. Le-Trung
+  title: "A Novel 5G PMN-Driven Approach for AI-powered Irrigation and Crop Health Monitoring"
+  venue: IEEE Access
+  pillars: [wireless, dt]
+
+- type: journal
+  year: 2024
+  date: Dec. 2024
+  authors: Y. Li, D. V. Huynh, V.-L. Nguyen, D.-B. Ha, H. J. Zepernick, and T. Q. Duong
+  title: "Multiagent UAV-Aided URLLC Mobile Edge Computing Systems: A Joint Communication and Computation Optimization Approach"
+  venue: IEEE Systems Journal, vol. 18, no. 4, pp. 1828-1838
+  abstract: https://ieeexplore.ieee.org/document/10606937
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/J-2024-IEEE-System-Journal-Multi-Agent-UAV-aided-URLLC-MEC-A-Joint-Communication-and-Computation-Optimisation-Approach.pdf
+  pillars: [edge, wireless]
+
+- type: journal
+  year: 2024
+  date: Oct. 2024
+  authors: D. V. Huynh, S. R. Khosravirad, S. Cotton, T. X. Vu, O. A. Dobre, H. Shin, and T. Q. Duong
+  title: "Joint Sensing, Communications, and Computing Design for 6G URLLC Service-Oriented MEC Networks"
+  venue: IEEE Internet of Things Journal, vol. 11, no. 20, pp. 32429-32439
+  abstract: https://ieeexplore.ieee.org/document/10570292
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/J-2024-IEEE-IoT-Joint-Sensing-Communications-and-Computing-Design-for-6G-URLLC-Service-Oriented-MEC-Networks.pdf
+  pillars: [edge, wireless]
+
+- type: journal
+  year: 2024
+  date: Mar. 2024
+  authors: A. Masaracchia, D. V. Huynh, G. C. Alexandropoulos, B. Canberk, A. Dobre, and T. Q. Duong
+  title: "Towards the metaverse realization in 6G: orchestration of RIS-enabled smart wireless environments via digital twins"
+  venue: IEEE Internet of Things Magazine, vol. 7, no. 2, pp. 22-28
+  abstract: https://ieeexplore.ieee.org/abstract/document/10463676
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/J-2024-IEEE-IoT-Magazine-Toward-the-Metaverse-Realization-in-6G-Orchestration-of-RIS-Enabled_Smart_Wireless_Environments_via_Digital_Twins.pdf
+  pillars: [dt, wireless]
+
+- type: journal
+  year: 2023
+  date: 2023
+  authors: P. T. H. Nguyen, T.-N. To, D. Tran-Thi, and Q. Le-Trung
+  title: "5G Channel Estimation Based on Whale Optimization Algorithm"
+  venue: Wireless Communications and Mobile Computing
+  pillars: [wireless]
+
+- type: journal
+  year: 2023
+  date: Oct. 2023
+  authors: D. V. Huynh, V.-D. Nguyen, S. R. Khosravirad, G. K. Karagiannidis, and T. Q. Duong
+  title: "Distributed Communication and Computation Resource Management for Digital Twin-aided Edge Computing with Short-Packet Communications"
+  venue: IEEE Journal on Selected Areas in Communications, vol. 41, no. 10, pp. 3008-3021
+  abstract: https://ieeexplore.ieee.org/document/10234534
+  pdf: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/505073368/JSAC_DTMN_SI_1570869353_Huynh.pdf
+  pillars: [dt, edge]
+
+- type: journal
+  year: 2023
+  date: Jun. 2023
+  authors: T. Q. Duong, D. V. Huynh, S. R. Khosravirad, V. Sharma, O. A. Dobre, and H. Shin
+  title: "From Digital Twin to Metaverse: The Role of 6G Ultra-Reliable and Low-Latency Communications with Multi-tier Computing"
+  venue: IEEE Wireless Communications, vol. 30, no. 3, pp. 140-146
+  abstract: https://ieeexplore.ieee.org/document/10183802
+  note: Top 50 most frequently accessed documents to Oct. 2023
+  pillars: [dt, edge]
+
+- type: journal
+  year: 2023
+  date: Feb. 2023
+  authors: D. V. Huynh, V.-D. Nguyen, S. Chatzinotas, S. R. Khosravirad, H. V. Poor, and T. Q. Duong
+  title: "Joint Communication and Computation Offloading for Ultra-Reliable and Low-Latency with Multi-tier Computing"
+  venue: IEEE Journal on Selected Areas in Communications, vol. 41, no. 2, pp. 521-537
+  abstract: https://ieeexplore.ieee.org/document/9978295
+  pdf: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/402512911/Paper_PDF.pdf
+  pillars: [edge]
+
+- type: journal
+  year: 2022
+  date: Nov. 2022
+  authors: D. V. Huynh, V.-D. Nguyen, S. R. Khosravirad, V. Sharma, O. A. Dobre, H. Shin, and T. Q. Duong
+  title: "URLLC Edge Networks with Joint Optimal User Association, Task Offloading, and Resource Allocation: A Digital Twin Approach"
+  venue: IEEE Transactions on Communications, vol. 70, no. 11, pp. 7669-7682
+  abstract: https://ieeexplore.ieee.org/document/9885226
+  pdf: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/365734532/Final_manuscript.pdf
+  pillars: [dt, edge]
+
+- type: journal
+  year: 2022
+  date: 2022
+  authors: T. Q. Duong, L. D. Nguyen, B. Narottama, J. A. Ansere, D. V. Huynh, and H. Shin
+  title: "Quantum-inspired Real-time Optimisation for 6G Networks: Opportunities, Challenges, and the Road Ahead"
+  venue: IEEE Open Journal of the Communications Society, vol. 3, pp. 1347-1359
+  pdf: https://ieeexplore.ieee.org/document/9849061
+  pillars: [qsec, wireless]
+
+- type: journal
+  year: 2022
+  date: Aug. 2022
+  authors: D. V. Huynh, S. R. Khosravirad, A. Masaracchia, O. A. Dobre, and T. Q. Duong
+  title: "Edge Intelligence-based Ultra-Reliable and Low-Latency Communications for Digital Twin-enabled Metaverse"
+  venue: IEEE Wireless Communications Letters, vol. 11, no. 8, pp. 1733-1737
+  abstract: https://ieeexplore.ieee.org/document/9786719
+  pdf: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/333756610/IEEE_WCL_accepted.pdf
+  note: Top 50 most frequently accessed documents to Jan. 2024
+  pillars: [dt, edge]
+
+- type: journal
+  year: 2022
+  date: 2022
+  authors: Y. Li, D. V. Huynh, T. Do-Duy, E. Garcia-Palacios, and T. Q. Duong
+  title: "Unmanned Aerial Vehicles-aided Edge Networks with Ultra-Reliable Low-Latency Communications: A Digital Twin Approach"
+  venue: IET Signal Processing
+  abstract: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/sil2.12128
+  pdf: https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/sil2.12128
+  pillars: [dt, edge]
+
+- type: journal
+  year: 2022
+  date: Apr. 2022
+  authors: T. Do-Duy, D. V. Huynh, O. A. Dobre, B. Canberk, and T. Q. Duong
+  title: "Digital Twin-aided Intelligent Offloading with Edge Selection in Mobile Edge Computing"
+  venue: IEEE Wireless Communications Letters, vol. 11, no. 4, pp. 806-810
+  abstract: https://ieeexplore.ieee.org/document/9691475
+  pdf: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/281022821/Final_Manuscript.pdf
+  pillars: [dt, edge]
+
+- type: journal
+  year: 2022
+  date: Apr. 2022
+  authors: D. V. Huynh, T. Do-Duy, L. D. Nguyen, M.-T. Le, N.-S. Vo, and T. Q. Duong
+  title: "Real-Time Optimized Path Planning and Energy Consumption for Data Collection in Unmanned Ariel Vehicles-Aided Intelligent Wireless Sensing"
+  venue: IEEE Transactions on Industrial Informatics, vol. 18, no. 4, pp. 2753-2761
+  abstract: https://ieeexplore.ieee.org/document/9543534
+  pdf: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/249287113/ALL_TII_21_1182.pdf
+  pillars: [wireless]
+
+# ------------------------------------------------------------- Conferences
+- type: conference
+  year: 2026
+  date: Nov. 22-26, 2026
+  authors: Q. T. Kiet, L. S. Liem, L. T. G. Bao, N. H. Khoa, D. V. Huynh, V.-H. Pham, and P. T. Duy
+  title: "Adversarial Robustness of Quantum Learning-based Intrusion Detection Systems in IoT Networks"
+  venue: 32nd IEEE International Conference on Parallel and Distributed Systems (ICPADS 2026), Tokyo, Japan
+  pillars: [qsec]
+
+- type: conference
+  year: 2026
+  date: Oct. 15-17, 2026
+  authors: H.-U. Vo-Thi, D. V. Huynh, N. N. Son, N. C. Luong, and T. Do-Duy
+  title: "Secrecy Outage Characterization for Segmented Waveguide near-Field Pinching-Antenna Systems"
+  venue: IEEE ATC 2026, Quy Nhon, Vietnam
+  pillars: [wireless, qsec]
+
+- type: conference
+  year: 2026
+  date: Jul. 30-31, 2026
+  authors: H. Le-Trung, H. Le-Minh, T. Nguyen-Khanh, D. V. Huynh, and Q. Le-Trung
+  title: "A Digital Twin Framework for Real-Time Monitoring and Predictive Energy Management in Smart Homes"
+  venue: 8th International Conference on Green Technology and Sustainable Development (GTSD 2026), Ho Chi Minh City, Vietnam
+  pillars: [dt]
+
+- type: conference
+  year: 2026
+  date: Jul. 27-29, 2026
+  authors: P. Tran-Hoai, C. Dang-Le-Bao, D. V. Huynh, and Q. Le-Trung
+  title: "Diffusion Policy Optimization for Autonomous UAV Navigation in GNSS-Denied Cluttered Environments"
+  venue: 2nd International Conference on Intelligent Aerial Access and Applications (IAAA 2026), Ho Chi Minh City, Vietnam
+  pillars: [wireless]
+
+- type: conference
+  year: 2026
+  date: Jul. 27-29, 2026
+  authors: P. Nguyen-Duong-Hoang, T. Phan-Van, C. Dang-Le-Bao, D. V. Huynh, and Q. Le-Trung
+  title: "DT-MARL-UAV: Safe Multi-UAV Trajectory Coordination via Digital Twin-Assisted Multi-Agent Reinforcement Learning"
+  venue: 2nd International Conference on Intelligent Aerial Access and Applications (IAAA 2026), Ho Chi Minh City, Vietnam
+  pillars: [dt, wireless]
+
+- type: conference
+  year: 2026
+  date: Feb. 2026
+  authors: V. P. Pham, D. V. Huynh, B. Canberk, S. L. Cotton, and T. Q. Duong
+  title: "Joint Optimal Beamforming and Discrete Phase Shift Design in STAR-RIS with Quantum Optimization"
+  venue: ICNC 2026, Maui, Hawaii (invited paper)
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/11/Vu___NOMA_RIS_solved_by_QAOA.pdf
+  pillars: [wireless, qsec]
+
+- type: conference
+  year: 2025
+  date: Dec. 8-12, 2025
+  authors: D. V. Huynh, S. C. Prabhashana, H. Shin, and T. Q. Duong
+  title: "Quantum Deep Q-Networks for Adaptive Resource Control in SAGIN-enabled Augmented Reality Systems"
+  venue: IEEE GLOBECOM Workshops 2025, Taipei, Taiwan
+  pillars: [wireless, qsec]
+
+- type: conference
+  year: 2025
+  date: Dec. 8-12, 2025
+  authors: S. C. Prabhashana, D. V. Huynh, O. A. Dobre, H. Shin, and T. Q. Duong
+  title: "Quantum DRL for Green UAV Positioning in 6G-Enabled SAGIN with Cooperative Nano-Satellite Constellations"
+  venue: IEEE GLOBECOM 2025, Taipei, Taiwan
+  pillars: [wireless, qsec]
+
+- type: conference
+  year: 2025
+  date: Jun. 8-12, 2025
+  authors: S. C. Prabhashana, D. V. Huynh, and T. Q. Duong
+  title: "Quantum DRL for UAV-RIS-aided Maritime Communications with 6G Digital Twin Applications"
+  venue: IEEE ICC Workshops 2025, Montreal, Canada
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/C-2025-ICC-Workshop-Quantum-DRL-for-UAV-RIS-aided-Maritime-Communications-with-6G-Digital-Twin-Applications.pdf
+  note: Best Paper Award
+  pillars: [dt, wireless, qsec]
+
+- type: conference
+  year: 2025
+  date: Jun. 8-12, 2025
+  authors: E. Ak, D. V. Huynh, and T. Q. Duong
+  title: "Quantum-enhanced Optimization for LNG Ship Routing: Integrating Digital Twins with QAOA"
+  venue: IEEE ICC Workshops 2025, Montreal, Canada
+  pillars: [dt, qsec]
+
+- type: conference
+  year: 2025
+  date: Jun. 8-12, 2025
+  authors: D. V. Huynh, S. R. Khosravirad, S. Cotton, O. A. Dobre, and T. Q. Duong
+  title: "DRL-based Optimisation for Task Offloading in Space-Air-Ground Integrated Networks: A Reliability-Driven Approach"
+  venue: IEEE ICC 2025, Montreal, Canada
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/C-2025-ICC-DRL-based-Optimisation-for-Task-Offloading-in-Space-Air-Ground-Integrated-Networks-A-Reliability-Driven-Approach.pdf
+  pillars: [edge, wireless]
+
+- type: conference
+  year: 2025
+  date: Jun. 8-12, 2025
+  authors: S. C. Prabhashana, D. V. Huynh, K. Singh, H.-J. Zepernick, A. Dobre, H. Shin, and T. Q. Duong
+  title: "Aerial Reconfigurable Intelligent Surface-enabled SAGIN with LSTM-enhanced DRL Model"
+  venue: IEEE ICC 2025, Montreal, Canada
+  pdf: https://cerc-ngct.ca/wp-content/uploads/2025/03/C-2025-ICC-Aerial-Reconfigurable-Intelligent-Surface-enabled-SAGIN-with-LSTM-enhanced-DRL-Model.pdf
+  pillars: [wireless]
+
+- type: conference
+  year: 2025
+  date: Mar. 31-Apr. 2, 2025
+  authors: V. P. Pham, D. V. Huynh, B. D. E. McNiven, O. A. Dobre, B. Canberk, and T. Q. Duong
+  title: "Joint Optimal Design for Speed and Routing in Maritime Logistics with Quantum Optimization"
+  venue: QCNC 2025, Nara, Japan (invited paper)
+  pillars: [qsec]
+
+- type: conference
+  year: 2024
+  date: Dec. 8-12, 2024
+  authors: D. V. Huynh, S. R. Khosravirad, V. Sharma, B. Canberk, O. A. Dobre, and T. Q. Duong
+  title: "Digital Twin-enabled Low-Carbon Sustainable Edge Computing for Wireless Networks"
+  venue: IEEE GLOBECOM 2024, Cape Town, South Africa
+  pillars: [dt, edge]
+
+- type: conference
+  year: 2023
+  date: Nov. 6-8, 2023
+  authors: T. Do-Duy, D. V. Huynh, E. G. Garcia-Palacios, T.-V. Cao, V. Sharma, and T. Q. Duong
+  title: "Joint Computation and Communication Resource Allocation for Unmanned Aerial Vehicle NOMA Systems"
+  venue: IEEE CAMAD 2023, Edinburgh, Scotland
+  note: Best Paper Award
+  pillars: [wireless, edge]
+
+- type: conference
+  year: 2023
+  date: Jun. 26-28, 2023
+  authors: D. V. Huynh, Y. Li, A. Masaracchia, T. Hoang, and T. Q. Duong
+  title: "Optimal Resource Allocation for 6G UAV-enabled Mobile Edge Computing with Mission-Critical Applications"
+  venue: IEEE MetaCom 2023, Kyoto, Japan
+  pillars: [edge, wireless]
+
+- type: conference
+  year: 2023
+  date: May 28-Jun. 1, 2023
+  authors: D. V. Huynh, V.-D. Nguyen, O. A. Dobre, S. R. Khosravirad, and T. Q. Duong
+  title: "Adaptive Service Placement, Task Offloading and Bandwidth Allocation in Task-Oriented URLLC Edge Networks"
+  venue: IEEE ICC 2023, Rome, Italy
+  pillars: [edge]
+
+- type: conference
+  year: 2022
+  date: Oct. 30-Nov. 2, 2022
+  authors: D. V. Huynh, V.-D. Nguyen, S. R. Khosravirad, and T. Q. Duong
+  title: "Fairness-aware Latency Minimisation in Digital Twin aided Edge Computing with Ultra-Reliable and Low-Latency Communications: A Distributed Optimisation Approach"
+  venue: 56th Asilomar Conference on Signals, Systems and Computers, Pacific Grove, CA, USA (invited paper)
+  pillars: [dt, edge]
+
+- type: conference
+  year: 2022
+  date: Jul. 6-8, 2022
+  authors: T. Q. Duong, D. V. Huynh, Y. Li, E. Garcia-Palacios, and K. Sun
+  title: "Digital Twin-enabled 6G Aerial Edge Computing with Ultra-Reliable and Low-Latency Communications"
+  venue: IEEE 6GNet 2022, Paris, France (invited paper)
+  abstract: https://ieeexplore.ieee.org/abstract/document/9830363
+  pillars: [dt, edge]
+
+- type: conference
+  year: 2022
+  date: May 16-20, 2022
+  authors: D. V. Huynh, V.-D. Nguyen, V. Sharma, O. A. Dobre, and T. Q. Duong
+  title: "Digital Twin Empowered Ultra-Reliable and Low-Latency Communications-based Edge Networks in Industrial IoT Environment"
+  venue: IEEE ICC 2022, Seoul, South Korea
+  pillars: [dt, edge]
+
+- type: conference
+  year: 2022
+  date: May 16-20, 2022
+  authors: D. V. Huynh, V.-D. Nguyen, S. R. Khosravirad, and T. Q. Duong
+  title: "Minimising Latency for Edge-Cloud Systems with Ultra-Reliable and Low-Latency Communications"
+  venue: IEEE ICC 2022, Seoul, South Korea
+  pillars: [edge]
+
+# ------------------------------------------------------------------- Books
+- type: book
+  year: 2024
+  date: 2024
+  authors: Q. Le-Trung, L. B. Le, T. Quan-Thanh, T. Nguyen-Khanh, and C. Dang-Le-Bao
+  title: "Emerging Big Data/AI and IoTs/5G Technologies for Smart Cities"
+  venue: Book, VNUHCM Publisher
+  pillars: [dt, edge]
+
+- type: book
+  year: 2024
+  date: 2024
+  authors: D. V. Huynh, Y. Li, T. Do-Duy, E. Garcia-Palacios, and T. Q. Duong
+  title: "Digital Twin-enabled Aerial Edge Networks with Ultra-Reliable Low-Latency Communications"
+  venue: "Book chapter in Digital Twins for 6G: Fundamental Theory, Technology and Applications, The Institution of Engineering and Technology (IET), ISBN 978-1-83953-745-5"
+  abstract: https://digital-library.theiet.org/content/books/te/pbte109e
+  pillars: [dt, edge]
+
+- type: book
+  year: 2023
+  date: 2023
+  authors: D. V. Huynh, S. R. Khosravirad, Y. Peng, A. Masaracchia, and T. Q. Duong
+  title: "Industrial IoTs Clustering, Joint Blocklength and Power Optimisation for Relay Robots-Aided URLLC in 5G Factory Automation"
+  venue: "Book chapter in Ultra-Reliable and Low-Latency Communications: Theory and Practice, Wiley and IEEE Press"
+  pillars: [wireless]
+
+- type: book
+  year: 2021
+  date: 2021
+  authors: Q. Le-Trung, D. Huynh-Van, and T. Nguyen-Khanh
+  title: "Internet of Things Technologies and Applications (Giáo trình Công nghệ Internet of Things và ứng dụng)"
+  venue: "Textbook in Vietnamese, VNUHCM Publisher"
+  pillars: [dt]
+
+# ------------------------------------------------------------------ Patent
+- type: patent
+  year: 2026
+  date: Mar. 2026
+  authors: Q. Le-Trung, D. V. Huynh, and N. Ly-Trong
+  title: "Hệ thống tái cấu hình, tái lập trình các thiết bị ngoại vi từ xa qua mạng trong phòng thí nghiệm ảo (Remote reconfiguration and reprogramming of peripheral devices over the network in a virtual laboratory)"
+  venue: Vietnam exclusive patent, no. 1-0056741 B
+  pillars: [dt]

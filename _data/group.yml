@@ -1,0 +1,65 @@
+name: UiTiOt Research Group
+short_name: UiTiOt
+affiliation: Department of Computer Networks, Faculty of Computer Networks and Communications
+institution: University of Information Technology, Vietnam National University Ho Chi Minh City (VNUHCM-UIT)
+founded: 2017
+mission: >-
+  We build and evaluate optimization and learning methods that keep networked computing systems
+  reliable, adaptive, and secure, from IoT devices and edge servers to UAVs, satellites, and quantum hardware.
+leads: Co-led by Assoc. Prof. Quan Le-Trung and Dr. Dang Van Huynh
+
+# Primary address used by the "Email the group" buttons.
+contact_email: danghv@uit.edu.vn
+
+# Contact people shown in the footer and on the Join us page.
+contacts:
+  - name: Quan Le-Trung
+    title: Assoc. Prof. Dr.techn.
+    roles:
+      - Head, Department of Computer Networks
+      - Dean, Faculty of Computer Networks and Communications
+    institution: University of Information Technology, VNUHCM
+    address:
+      - "Room E8.5, E Building, UIT's Campus"
+      - "VNUHCM Urban Area, Quarter 9, Linh Xuan Ward"
+      - "Ho Chi Minh City, Vietnam"
+    emails:
+      - quanlt@uit.edu.vn
+      - quanle.trung@gmail.com
+
+  - name: Dang Van Huynh
+    title: Lecturer, PhD
+    roles:
+      - Department of Computer Networks
+      - Faculty of Computer Networks and Communications
+    institution: University of Information Technology, VNUHCM
+    address:
+      - "Room E8.8, E Building, UIT's Campus"
+      - "VNUHCM Urban Area, Quarter 9, Linh Xuan Ward"
+      - "Ho Chi Minh City, Vietnam"
+    emails:
+      - danghv@uit.edu.vn
+
+# Illustration of the four research areas (see README). Save the image at one of these paths.
+research_figure:
+  paths:
+    - /assets/img/research-areas.png
+    - /assets/img/research-areas.jpg
+    - /assets/img/research-areas.webp
+  alt: Illustration of the four research areas of the group - Digital Twins and IoT, Edge and Cloud Computing, Next-Generation Wireless Networks, and Quantum Computing and Cybersecurity.
+  caption: The four research areas of the UiTiOt Research Group.
+
+# Links shown in the footer and on the Contact page.
+links:
+  - label: Dang Van Huynh, personal site
+    url: https://sites.google.com/site/vdanghuynh/
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?hl=en&user=pLw8j1gAAAAJ
+  - label: DBLP
+    url: https://dblp.org/pid/312/9269.html
+  - label: ORCID
+    url: https://orcid.org/0000-0002-2314-4934
+  - label: Scopus
+    url: https://www.scopus.com/authid/detail.uri?authorId=57200527663
+  - label: UIT
+    url: https://www.uit.edu.vn/

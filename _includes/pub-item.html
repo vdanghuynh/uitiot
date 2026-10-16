@@ -1,0 +1,21 @@
+{% assign pub = include.pub %}
+<li class="pub" data-type="{{ pub.type }}" data-year="{{ pub.year }}" data-areas="{{ pub.pillars | join: ' ' }}" data-text="{{ pub.title | append: ' ' | append: pub.authors | append: ' ' | append: pub.venue | downcase | escape }}">
+  <p class="pub-authors">{{ pub.authors }}</p>
+  <h3 class="pub-title">{{ pub.title }}</h3>
+  <p class="pub-venue"><em>{{ pub.venue }}</em>{% if pub.date %}, {{ pub.date }}{% endif %}{% if pub.status %}. {{ pub.status }}{% endif %}</p>
+  {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
+  {% if pub.abstract or pub.pdf %}
+  <p class="pub-links">
+    {% if pub.abstract %}<a href="{{ pub.abstract }}" rel="noopener">Abstract</a>{% endif %}
+    {% if pub.pdf %}<a href="{{ pub.pdf }}" rel="noopener">PDF</a>{% endif %}
+  </p>
+  {% endif %}
+  {% if include.show_areas %}
+  <ul class="pub-areas">
+    {% for pid in pub.pillars %}
+    {% assign pl = site.data.pillars | where: "id", pid | first %}
+    <li class="area area-{{ pid }}">{{ pl.name }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
