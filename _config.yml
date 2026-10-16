@@ -9,8 +9,8 @@ lang: en
 
 # Hosted as a project site under the personal account: https://vdanghuynh.github.io/uitiot/
 # (If the site later moves to its own organization or domain, set baseurl to "" and change url.)
-url: "https://vdanghuynh.github.io"
-baseurl: "/uitiot"
+url: "https://uitiot.vn"
+baseurl: ""
 
 markdown: kramdown
 permalink: pretty

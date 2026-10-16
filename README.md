@@ -31,7 +31,7 @@ To add a portrait for a person, put the image in `assets/img/people/` and add `p
 
 ## Deploy on GitHub Pages
 
-The site is configured as a project site at `https://vdanghuynh.github.io/uitiot/` (`url: "https://vdanghuynh.github.io"` and `baseurl: "/uitiot"` in `_config.yml`).
+The site is served at `https://uitiot.vn/` through the `CNAME` file (`url: "https://uitiot.vn"` and `baseurl: ""` in `_config.yml`). Before the custom domain was set up it lived at `https://vdanghuynh.github.io/uitiot/` with `baseurl: "/uitiot"`. Local preview is now at http://127.0.0.1:4000/.
 
 1. On GitHub, create a public repository named `uitiot` under `vdanghuynh`, without a README or .gitignore.
 2. In this folder, run `git init -b main`, `git add .`, `git commit -m "Initial site"`, `git remote add origin https://github.com/vdanghuynh/uitiot.git`, and `git push -u origin main`.
@@ -47,7 +47,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open http://127.0.0.1:4000/uitiot/. The Gemfile uses the `github-pages` gem so local builds match what GitHub produces. Use Ruby 3.3 for local preview, because Ruby 4.0 is too new for that gem. GitHub builds the site in its own environment, so this only affects your local copy.
+Then open http://127.0.0.1:4000/. The Gemfile uses the `github-pages` gem so local builds match what GitHub produces. Use Ruby 3.3 for local preview, because Ruby 4.0 is too new for that gem. GitHub builds the site in its own environment, so this only affects your local copy.
 
 ## One-command local preview
 
