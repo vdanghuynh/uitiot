@@ -58,8 +58,9 @@
   line1: Quantum Computing
   line2: and Cybersecurity
   summary: >-
-    We apply quantum machine learning and quantum optimization, including runs on real quantum hardware,
-    to hard resource management problems in networks and cloud systems. In parallel, we build learning-based
+    We apply quantum machine learning and quantum optimization, including hybrid quantum-classical methods,
+    to hard resource management problems in networks and cloud systems. Earlier work with partners in Canada
+    included experiments on real quantum hardware. In parallel, we build learning-based
     intrusion detection and defense for IoT, SDN, and O-RAN that holds up under attack, drift, and poisoned data.
   topics:
     - Quantum optimization for networks and cloud scheduling
