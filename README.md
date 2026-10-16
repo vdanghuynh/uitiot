@@ -17,7 +17,7 @@ A static site built with Jekyll and hosted on GitHub Pages. All content lives in
 | Publications (last five years, 2022 onward) | `_data/publications.yml`; older journal and conference papers are kept in `_data/publications_archive.yml` and are not shown |
 | Menu items and their order | `_data/nav.yml` |
 | Colors and fonts | top of `assets/css/main.css` (`:root` block; blue `#0d47a1` and orange `#ff5a24` come from the logo) |
-| Logo | `assets/img/uitiot-logo.png` (cropped copy of `UiTiOt-Logo.png`), used in the header, footer, and link previews; `assets/img/favicon.svg` is the browser-tab icon |
+| Logo | `assets/img/logo-header.png` (cropped copy of `UiTiOt-Logo.png`; keep the two names different, because macOS ignores upper and lower case while GitHub does not), used in the header, footer, and link previews; `assets/img/favicon.svg` is the browser-tab icon |
 | Icons of the four areas | `_includes/pillar-graph.html` (one small SVG symbol per area, keyed by the `id` in `_data/pillars.yml`) |
 | Join us page text | `join.html` |
 
