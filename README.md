@@ -13,7 +13,7 @@ A static site built with Jekyll and hosted on GitHub Pages. All content lives in
 | PhD, master's, undergraduate, completed projects | `_data/supervision.yml` |
 | Advisors and collaborators | `_data/collaborators.yml` |
 | Grants, testbeds, patents, books | `_data/projects.yml` |
-| News items (newest first; the top 3 also scroll in the home page headline) | `_data/news.yml` |
+| News items (newest first; the top 5 also scroll in the home page headline) | `_data/news.yml` |
 | Publications (last five years, 2022 onward) | `_data/publications.yml`; older journal and conference papers are kept in `_data/publications_archive.yml` and are not shown |
 | Menu items and their order | `_data/nav.yml` |
 | Colors and fonts | top of `assets/css/main.css` (`:root` block; blue `#0d47a1` and orange `#ff5a24` come from the logo) |

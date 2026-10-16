@@ -1,4 +1,4 @@
-{%- comment -%} Scrolling headline of the three newest items in _data/news.yml. Shown on the home page only. {%- endcomment -%}
+{%- comment -%} Scrolling headline of the five newest items in _data/news.yml. Shown on the home page only. {%- endcomment -%}
 <div class="ticker" role="region" aria-label="Latest news">
   <div class="container ticker-inner">
     <a class="ticker-label" href="{{ '/news/' | relative_url }}">Latest news</a>
@@ -6,7 +6,7 @@
       <div class="ticker-track" data-ticker>
         {%- for copy in (1..2) -%}
         <div class="ticker-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
-          {%- for item in site.data.news limit: 3 -%}
+          {%- for item in site.data.news limit: 5 -%}
           <a class="ticker-item" href="{% if item.url %}{{ item.url }}{% else %}{{ '/news/' | relative_url }}{% endif %}"{% if copy == 2 %} tabindex="-1"{% endif %}>
             <span class="ticker-date">{{ item.date }}</span>
             <span class="ticker-text">{{ item.text }}</span>
