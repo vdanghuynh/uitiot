@@ -23,18 +23,25 @@ leadership:
 
 members:
   - name: Thuat Nguyen-Khanh
+    photo: /assets/img/people/nguyen-khanh-thuat-sq.jpg
     title: MSc, PhD student
     topic: A sustainable digital twin framework with decentralized machine learning for smart city
   - name: Chuong Dang-Le-Bao
+    photo: /assets/img/people/dang-le-bao-chuong-sq.jpg
     title: MSc, PhD student
     topic: Agentic digital twin architecture for 6G UAV networks
   - name: Tuan Le-Anh
+    photo: /assets/img/people/le-anh-tuan-sq.jpg
     title: MSc
   - name: Binh Bui-Thanh
+    photo: /assets/img/people/bui-thanh-binh-sq.jpg
     title: MSc
   - name: Luan Van-Thien
+    photo: /assets/img/people/van-thien-luan-sq.jpg
     title: MSc
   - name: Bao Nguyen-Van
+    photo: /assets/img/people/nguyen-van-bao-sq.jpg
     title: MSc
   - name: Phat Phan-Trung
+    photo: /assets/img/people/phan-trung-phat-sq.jpg
     title: MSc
