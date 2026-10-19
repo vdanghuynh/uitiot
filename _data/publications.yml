@@ -310,6 +310,15 @@
 # ------------------------------------------------------------- Conferences
 - type: conference
   year: 2026
+  date: Dec. 3-5, 2026
+  status: Accepted
+  authors: K. Dao-Anh, N. Tran-Bui-Nhat, T. Nguyen-Khanh, D. Tran-Thi, and Q. Le-Trung
+  title: "Enhancing Trust in Federated Learning Through Blockchain-Based Model Verification and Zero-Knowledge Proofs"
+  venue: IEEE COMNETSAT 2026, Manado, Indonesia
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2026
   date: Nov. 22-26, 2026
   authors: Q. T. Kiet, L. S. Liem, L. T. G. Bao, N. H. Khoa, D. V. Huynh, V.-H. Pham, and P. T. Duy
   title: "Adversarial Robustness of Quantum Learning-based Intrusion Detection Systems in IoT Networks"
