@@ -54,6 +54,28 @@
     });
   }
 
+  // People page: count up the statistics when they scroll into view
+  var counters = document.querySelectorAll(".stat-num[data-count]");
+  if (counters.length && "IntersectionObserver" in window && !reduce) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        cio.unobserve(e.target);
+        var el = e.target, end = parseInt(el.getAttribute("data-count"), 10), t0 = null;
+        if (!end) return;
+        function step(t) {
+          if (t0 === null) t0 = t;
+          var k = Math.min((t - t0) / 1100, 1), eased = 1 - Math.pow(1 - k, 3);
+          el.textContent = String(Math.round(end * eased));
+          if (k < 1) requestAnimationFrame(step);
+        }
+        el.textContent = "0";
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.6 });
+    Array.prototype.forEach.call(counters, function (el) { cio.observe(el); });
+  }
+
   // Publication filters (only runs on the Publications page)
   var root = document.querySelector("[data-pub-filters]");
   if (!root) return;

@@ -10,11 +10,48 @@ description: Members, students, and collaborators of the UiTiOt Research Group a
 
 <div class="container page-head">
   <h1>People</h1>
-  <p class="lead">Faculty, PhD students, and master's and undergraduate researchers at the Department of Computer Networks, together with advisors and collaborators in Canada, the United Kingdom, Germany, Australia, and Vietnam.</p>
+  <p class="lead">Faculty, PhD students, and master's and undergraduate researchers at the Department of Computer Networks, together with advisors and collaborators in Canada, the United Kingdom, Germany, Australia, the United States, and Vietnam.</p>
 </div>
 
 <section class="section">
   <div class="container">
+
+    {%- assign phd_n = site.data.supervision.phd | size -%}
+    {%- assign ms_n = site.data.supervision.masters | size -%}
+    {%- assign ug_n = 0 -%}
+    {%- for s in site.data.supervision.undergraduate -%}
+      {%- assign ug_parts = s.name | split: ", " | size -%}
+      {%- assign ug_n = ug_n | plus: ug_parts -%}
+    {%- endfor -%}
+    {%- assign alumni_n = site.data.supervision.alumni | size -%}
+    {%- assign alumni_since = site.data.supervision.alumni | map: "year" | sort | first -%}
+
+    <div class="people-block force" aria-labelledby="force-title">
+      <p class="force-eyebrow">Research force</p>
+      <h2 id="force-title">A pipeline from undergraduate to PhD</h2>
+      <ul class="stat-grid">
+        <li><a class="stat" href="#phd">
+          <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>
+          <span class="stat-num" data-count="{{ phd_n }}">{{ phd_n }}</span>
+          <span class="stat-label">PhD<br>students</span>
+        </a></li>
+        <li><a class="stat" href="#masters">
+          <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 4 4.4 12 8l8-3.6L12 1z"/><circle cx="12" cy="12" r="3.2"/><path d="M5.5 22c0-4.2 2.8-7 6.5-7s6.5 2.8 6.5 7z"/></svg>
+          <span class="stat-num" data-count="{{ ms_n }}">{{ ms_n }}</span>
+          <span class="stat-label">Master's<br>students</span>
+        </a></li>
+        <li><a class="stat" href="#undergraduate">
+          <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.2"/><path d="M6 20c0-3.9 2.6-6.5 6-6.5s6 2.6 6 6.5z"/><circle cx="4.6" cy="9.6" r="2.3"/><path d="M0.8 18.5c0-2.8 1.5-4.7 3.8-4.7 .9 0 1.6.2 2.2.6-1.4 1.1-2.2 2.7-2.4 4.1z"/><circle cx="19.4" cy="9.6" r="2.3"/><path d="M23.2 18.5c0-2.8-1.5-4.7-3.8-4.7-.9 0-1.6.2-2.2.6 1.4 1.1 2.2 2.7 2.4 4.1z"/></svg>
+          <span class="stat-num" data-count="{{ ug_n }}">{{ ug_n }}</span>
+          <span class="stat-label">Under&shy;graduates</span>
+        </a></li>
+        <li><a class="stat stat-alumni" href="#alumni">
+          <svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 1.5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 3.6a3.4 3.4 0 1 1 0 6.8 3.4 3.4 0 0 1 0-6.8z"/><path d="M7.6 15.3 5.5 22.5l6.5-3.2 6.5 3.2-2.1-7.2a8.5 8.5 0 0 1-8.8 0z"/></svg>
+          <span class="stat-num" data-count="{{ alumni_n }}">{{ alumni_n }}</span>
+          <span class="stat-label">MSc alumni<br>since {{ alumni_since }}</span>
+        </a></li>
+      </ul>
+    </div>
 
     <div class="people-block">
       <h2>Leadership</h2>
@@ -46,6 +83,7 @@ description: Members, students, and collaborators of the UiTiOt Research Group a
 
     <div class="people-block">
       <h2>Core members</h2>
+      <p class="pathway"><span class="pathway-tag">PhD pathway</span> All seven hold MSc degrees and are moving step by step into PhD study.</p>
       <ul class="team-grid">
         {% for m in site.data.people.members %}
         <li class="pcard pcard-member">

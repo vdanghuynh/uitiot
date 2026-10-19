@@ -22,9 +22,12 @@
 - name: Dr. Hoa T. Nguyen
   detail: Research Scientist, Quantum Systems Team, CSIRO Data61
   country: Australia
+- name: Prof. Phu H. Phung
+  detail: University of Dayton
+  country: United States
 - name: Assoc. Prof. Tho Quan-Thanh
   detail: Ho Chi Minh City University of Technology, VNUHCM; co-PI of the VINIF smart-city project
   country: Vietnam
 - name: Dr. Duc Ngoc Minh Dang
-  detail: TDT University; collaborator on the VNUHCM project on reconfiguration in the Internet of Things
+  detail: FPT University; collaborator on the VNUHCM project on reconfiguration in the Internet of Things
   country: Vietnam
