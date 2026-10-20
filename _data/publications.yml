@@ -327,6 +327,15 @@
 
 - type: conference
   year: 2026
+  date: Oct. 30-Nov. 1, 2026
+  status: Accepted
+  authors: D. M. Tao, A. N. H. Phan, H. T. Nguyen, D. V. Huynh, K. H. Nghi, V.-H. Pham, and P. T. Duy
+  title: "Benchmarking Classical and Quantum Classifiers for Windows PE Malware Detection under Functionality-Preserving Evasion Attacks"
+  venue: 20th International Conference on Network and System Security and 12th International Symposium on Security and Privacy in Social Networks and Big Data, Hangzhou, China
+  pillars: [qsec]
+
+- type: conference
+  year: 2026
   date: Oct. 15-17, 2026
   authors: H.-U. Vo-Thi, D. V. Huynh, N. N. Son, N. C. Luong, and T. Do-Duy
   title: "Secrecy Outage Characterization for Segmented Waveguide near-Field Pinching-Antenna Systems"
