@@ -7,6 +7,15 @@
 # ---------------------------------------------------------------- Journals
 - type: journal
   year: 2026
+  date: Nov. 2026
+  status: Accepted
+  authors: T.-D. Tran, H.-P. Quang-Dai, D. V. Huynh, and V.-H. Pham
+  title: "Q-Relay: Scaling Post-Quantum Cross-Chain IoT Networks via Asynchronous State Channels and Deep Reinforcement Learning"
+  venue: IEEE Internet of Things Journal
+  pillars: [qsec, edge]
+
+- type: journal
+  year: 2026
   date: Sep. 2026
   status: Accepted
   authors: A. T. Duong, H. Dao, T. A. Le, H. X. Nguyen, Q. Le-Trung, and D. V. Huynh
