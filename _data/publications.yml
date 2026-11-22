@@ -27,6 +27,14 @@
 - type: journal
   year: 2026
   date: 2026
+  authors: H.-U. Vo-Thi, D. V. Huynh, S. Nguyen Ngoc, N. Cong Luong, and T. Do-Duy
+  title: "Stream-Waveguide Association for Minimizing Worst-User Spatial Secrecy Outage in Multi-Waveguide SWANs"
+  venue: IEEE Wireless Communications Letters, vol. 15, pp. 6490-6494
+  pillars: [wireless, qsec]
+
+- type: journal
+  year: 2026
+  date: 2026
   authors: T. Do, Q. Le-Trung, and P. T. H. Nguyen
   title: "PRoFENCH: A Systematic Study of Multimodal Fusion and Generalization in WiFi-Vision Wireless Sensing for People Counting"
   venue: Ad Hoc Networks
