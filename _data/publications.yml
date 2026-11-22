@@ -17,10 +17,10 @@
 - type: journal
   year: 2026
   date: Sep. 2026
-  status: Accepted
   authors: A. T. Duong, H. Dao, T. A. Le, H. X. Nguyen, Q. Le-Trung, and D. V. Huynh
   title: "GRADFA: A Unified Gradient-Based Attribution Framework for Backdoor Detection and Mitigation in DRL-Based O-RAN xApps"
   venue: IEEE Open Journal of the Communications Society
+  doi: 10.1109/OJCOMS.2026.3739586
   pillars: [wireless, qsec]
   featured: true
 
@@ -30,6 +30,7 @@
   authors: T. Do, Q. Le-Trung, and P. T. H. Nguyen
   title: "PRoFENCH: A Systematic Study of Multimodal Fusion and Generalization in WiFi-Vision Wireless Sensing for People Counting"
   venue: Ad Hoc Networks
+  doi: 10.1016/j.adhoc.2026.104388
   pillars: [wireless]
 
 - type: journal
@@ -38,6 +39,7 @@
   authors: B. Pham-Thai, M. Nguyen-Le-Ha, T. Nguyen-Khanh, and Q. Le-Trung
   title: "An Approach to Attack Classification for Programmable Network Infrastructure Using Machine Learning and Deep Learning Solutions"
   venue: IEEE Access
+  doi: 10.1109/ACCESS.2025.3650705
   pillars: [qsec]
 
 - type: journal
@@ -46,6 +48,7 @@
   authors: T. Nguyen-Khanh, A. Pham-Nguyen-Hai, L. Van-Thien, and Q. Le-Trung
   title: "A Multimodal Swarm Learning Approach for DDoS Detection in Internet of Things Infrastructure"
   venue: EAI Endorsed Transactions on Industrial Networks and Intelligent Systems, vol. 13, no. 1
+  doi: 10.4108/eetinis.131.9961
   pillars: [qsec, edge]
 
 - type: journal
@@ -467,6 +470,15 @@
 
 - type: conference
   year: 2026
+  date: Jul. 30-31, 2026
+  status: Accepted
+  authors: A. Nguyen-Quoc, T. Bui-Thi-Ngoc, T. Nguyen-Khanh, D. Tran-Thi, and Q. Le-Trung
+  title: "Applying MLSecOps to Machine Learning Systems: A Case Study on Bank Account Fraud Detection"
+  venue: 8th International Conference on Green Technology and Sustainable Development (GTSD 2026), Ho Chi Minh City, Vietnam
+  pillars: [qsec, edge]
+
+- type: conference
+  year: 2026
   date: Jul. 27-29, 2026
   status: Accepted
   authors: L. Nguyen-Huu, C. Dang-Le-Bao, and Q. Le-Trung
@@ -477,20 +489,29 @@
 - type: conference
   year: 2026
   date: Jul. 13-18, 2026
-  status: Accepted
   authors: T. Pham-Ngoc, H. Nguyen-Thanh, and Q. Le-Trung
   title: "QCOEM: Quantum Cloud Orchestration with Evolutionary Multi-Objective Optimization"
   venue: IEEE CLOUD 2026, Sydney, Australia
+  doi: 10.1109/CLOUD72782.2026.00059
   pillars: [qsec, edge]
 
 - type: conference
   year: 2026
   date: Jun. 26-28, 2026
-  status: Accepted
   authors: H. Le-Minh-Khanh, T. Ngo-Duc, and Q. Le-Trung
   title: "Beyond FLOPs: Are NAS Benchmarks Ready for the Edge?"
   venue: IEEE ICCCI 2026, Okayama, Japan
+  doi: 10.1007/978-3-032-37933-7_11
   pillars: [edge]
+
+- type: conference
+  year: 2026
+  date: 2026
+  authors: B. Pham-Thai, N. Hong-Bich, T. Nguyen-Khanh, D. Tran-Thi, and Q. Le-Trung
+  title: "Enhancing Security and Efficiency in Diabetes Prediction Using Federated Learning and Generative Adversarial Networks"
+  venue: ICCIES 2026, Communications in Computer and Information Science, vol. 2945, Springer
+  doi: 10.1007/978-3-032-21631-1_26
+  pillars: [qsec, edge]
 
 - type: conference
   year: 2025
